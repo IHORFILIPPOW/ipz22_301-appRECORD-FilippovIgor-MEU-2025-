@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Звіти з лабораторних робіт</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-text">
+            <h1>Звіти з лабораторних робіт</h1>
+            <p>З дисципліни: Програмування інтернет-застосувань</p>
+            <p>Студент групи ІПЗ_22_301 Філіппов Ігор Ігорович</p>
+        </div>
+        <img src="me.jpg" alt="Фото студента" class="student-photo">
+    </header>
+
+    <nav>
+        <button onclick="showLab('lab1')">Лабораторна робота 1.1</button>
+        <button onclick="showLab('lab1_2')">Лабораторна робота 1.2</button>
+        <button onclick="showLab('lab2')">Лабораторна робота 2</button>
+        <button onclick="showLab('lab2_1')">Лабораторна робота 2.1</button>
+        <button onclick="showLab('lab3')">Лабораторна робота 3</button>
+        <button onclick="showLab('lab3_1')">Лабораторна робота 3.1</button>
+        <button onclick="showLab('lab4')">Лабораторна робота 4.1</button>
+        <button onclick="showLab('lab4_1')">Лабораторна робота 4.2</button>
+        <button onclick="showLab('lab5')">Лабораторна робота 5.1</button>
+        <button onclick="showLab('lab5_1')">Лабораторна робота 5.2</button>
+    </nav>
+
+    <main>
+        <div class="sidebar">
+            <button onclick="showSection('description')">Опис предметного середовища</button>
+            <button onclick="showSection('goal')">Тема, мета, місце розташування лабораторної номер 1</button>
+            <button onclick="showSection('structure')">Cтруктура документа</button>
+            <button onclick="showSection('tables')">HTML-код таблиць</button>
+            <button onclick="showSection('images')">HTML-код зображення</button>
+            <button onclick="showSection('lists')">HTML-код списки</button>
+            <button onclick="showSection('conclusion')">Висновки</button>
+        </div>
+
+        <div class="content">
+            <div id="lab1" class="content-section">
+                <div id="description">
+                    <h4>Опис предметного середовища</h4>
+                    <p>
+                        <strong>Тема:</strong> Створення веб-сайту для автосервісу "Gulf Motors".<br />
+                        <strong>Мета проєкту:</strong> 
+                        Забезпечити зручний спосіб взаємодії клієнта та автосервісу. Це включає он-лайн запис, доступ до списку послуг та їх вартість, можливість читати відгуки.
+                    </p>
+                    <p>
+                        <strong>Сценарій використання сайту для клієнтів:</strong>
+                    </p>
+                    <ul>
+                        <li>Клієнт переглядає інформацію про автосервіс. Клієнт переглядає інформацію про послуги. Клієнт вивчає ціни на дані послуги. Клієнт передивляється відгуки. Клієнт робить запис на конкретну послугу та день. 
+                        </li>
+                    </ul>
+                </div>
+                <div id="goal">
+                    <p><strong>Тема:</strong> Структура HTML-документа. Вибір предметної галузі.
+                    робота з посиланнями, таблицями, зображеннями, списками в html-документі.</p><br/>
+                    <p><strong>Мета:</strong> придбати практичні навички роботи з HTML-документом, таблицями, зображеннями, посиланнями, списками, формами
+                    Створити шаблон звітного HTML-документом для відображення результатів роботи всіх лабораторних робіт.
+                    </p>
+                    <a href="https://ihorfilippow.github.io/ipz22_301-appWEB-FilippovIgor--MEU-2025/" style="margin-right: 10px;">Посилання на живу веб-сторінку</a>
+<a href="https://github.com/IHORFILIPPOW/-ipz22_301-appWEB--Filippow-Ihor--MEU-2025-" style="margin-right: 30px;">Посилання на веб-сторінку</a><br/>
+
+<a href="https://deonpon.github.io/ipz22_301-appRECORD-ChesneyshiDenis-MEU-2025/" style="margin-right: 10px;">Посилання на живу сторінку звітного HTML документа</a>
+<a href="https://github.com/DeonPon/ipz22_301-appRECORD-ChesneyshiDenis-MEU-2025" style="margin-right: 30px;">Посилання на сторінку звітного HTML документа</a><br/>
+
+<a href="https://ihorfilippow.github.io/ipz22_301--app-INDEPENDENT--FilippovIgor-MEU-2025-/" style="margin-right: 10px;">Посилання на живу сторінку з самостійними роботами</a>
+<a href="https://github.com/IHORFILIPPOW/ipz22_301--app-INDEPENDENT--FilippovIgor-MEU-2025- ">Посилання на сторінку з самостійними роботами</a>
+
+
+</a>
+
+                </div>
+                <div id="structure">
+                    <h4>СТРУКТУРА ДОКУМЕНТА</h4>
+                    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="uk"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Головна сторінка готелю&lt;/title&gt;  
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;main&gt;
+        &lt;section&gt;
+            &lt;h2&gt;Зображення&lt;/h2&gt;
+            &lt;img src="Gulf Motors.jpg" alt="Логотип автосервісу" width="300" height="100"&gt;
+        &lt;/section&gt;
+
+        &lt;section&gt;
+            &lt;h2&gt;Таблиця&lt;/h2&gt;
+            &lt;table&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;Послуга&lt;/th&gt;
+                    &lt;th&gt;Ціна (грн)&lt;/th&gt;
+                    &lt;th&gt;Опис&lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Діагностика&lt;/td&gt;
+                    &lt;td&gt;1200 грн&lt;/td&gt;
+                    &lt;td&gt;Повна діагностика автомобіля з використанням сучасного обладнання.&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Заміна масла&lt;/td&gt;
+                    &lt;td&gt;500 грн&lt;/td&gt;
+                    &lt;td&gt;Швидка та якісна заміна масла для будь-яких видів авто.&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Ремонт двигуна&lt;/td&gt;
+                    &lt;td&gt;від 2000 грн&lt;/td&gt;
+                    &lt;td&gt;Професійний ремонт двигунів всіх видів.&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/section&gt;
+
+        &lt;section&gt;
+            &lt;h2&gt;Списки (нумеровані, маркіровані)&lt;/h2&gt;
+            &lt;h3&gt;Переваги автосервісу "Gulf Motors"&lt;/h3&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Досвідчені механіки&lt;/li&gt;
+                &lt;li&gt;Сучасне обладнання&lt;/li&gt;
+                &lt;li&gt;Гарантія на всі види робіт&lt;/li&gt;
+            &lt;/ul&gt;
+
+            &lt;h3&gt;Етапи обслуговування&lt;/h3&gt;
+            &lt;ol&gt;
+                &lt;li&gt;Попередній запис на обслуговування&lt;/li&gt;
+                &lt;li&gt;Проведення діагностики&lt;/li&gt;
+                &lt;li&gt;Погодження робіт та розрахунок вартості&lt;/li&gt;
+                &lt;li&gt;Ремонт або обслуговування автомобіля&lt;/li&gt;
+                &lt;li&gt;Завершення та видача автомобіля клієнту&lt;/li&gt;
+            &lt;/ol&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                </div>
+                <div id="tables" class="content-section">
+                    <h4>HTML-код таблиці</h4>
+                    <pre><code>
+                &lt;table&gt;
+                    &lt;tr&gt;
+                    &lt;th&gt;Послуга&lt;/th&gt;
+                    &lt;th&gt;Ціна (грн)&lt;/th&gt;
+                    &lt;th&gt;Опис&lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Діагностика&lt;/td&gt;
+                    &lt;td&gt;1200 грн&lt;/td&gt;
+                    &lt;td&gt;Повна діагностика автомобіля з використанням сучасного обладнання.&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Заміна масла&lt;/td&gt;
+                    &lt;td&gt;500 грн&lt;/td&gt;
+                    &lt;td&gt;Швидка та якісна заміна масла для будь-яких видів авто.&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Ремонт двигуна&lt;/td&gt;
+                    &lt;td&gt;від 2000 грн&lt;/td&gt;
+                    &lt;td&gt;Професійний ремонт двигунів всіх видів.&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+                    </code></pre>
+                
+                    <h4>Скріншот таблиці</h4>
+                    <img src="tables.jpg" alt="Скріншот таблиці" width="600">
+                
+                    <h4>Теорія про теги та атрибути, що застосовуються при створенні таблиць</h4>
+                    <p>Таблиці в HTML використовуються для організації даних у рядках і стовпцях. Основні теги для створення таблиць:</p>
+                    <ul>
+                        <li><strong>&lt;table&gt;</strong>: Цей тег визначає саму таблицю.</li>
+                        <li><strong>&lt;tr&gt;</strong>: Тег рядка таблиці. Використовується для створення нових рядків.</li>
+                        <li><strong>&lt;th&gt;</strong>: Тег заголовка стовпця. Використовується для створення заголовків у таблиці. Заголовки за замовчуванням жирні і вирівняні по центру.</li>
+                        <li><strong>&lt;td&gt;</strong>: Тег комірки таблиці. Використовується для заповнення даними комірок таблиці.</li>
+                        <li><strong>Атрибути:</strong>
+                            <ul>
+                                <li><strong>colspan</strong>: Визначає кількість стовпців, які повинні бути об'єднані в одній комірці.</li>
+                                <li><strong>rowspan</strong>: Визначає кількість рядків, які повинні бути об'єднані в одній комірці.</li>
+                                <li><strong>border</strong>: Визначає товщину рамки таблиці.</li>
+                                <li><strong>cellpadding</strong>: Визначає внутрішній відступ у комірках таблиці.</li>
+                                <li><strong>cellspacing</strong>: Визначає відстань між комірками таблиці.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>Приклад створення таблиці з об'єднанням комірок:</p>
+                    <pre><code>
+                &lt;table border="1"&gt;
+                    &lt;tr&gt;
+                        &lt;th colspan="2"&gt;Послуга&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td rowspan="2"&gt;Заміна масла&lt;/td&gt;
+                        &lt;td&gt;500 грн&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Швидка та якісна заміна масла для будь-яких видів авто&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+                    </code></pre>
+                </div>
+                
+
+                <div id="images" class="content-section">
+                    <h4>HTML-код зображення</h4>
+                    <pre><code>
+                &lt;section&gt;
+                    &lt;h2&gt;Зображення&lt;/h2&gt;
+                    &lt;img src="Gulf Motors.jpg" alt="Зображення логотипу автосервісу" width="300" height="100"&gt;
+                &lt;/section&gt;
+                    </code></pre>
+                
+                    <h4>Скріншот зображення</h4>
+                    <img src="Gulf Motors.jpg" alt="Скріншот зображення" width="400">
+                
+                    <h4>Теорія про атрибути тегу &lt;img&gt;</h4>
+                    <p>Тег &lt;img&gt; використовується для вставки зображень на веб-сторінку. Основні атрибути, що використовуються з цим тегом:</p>
+                    <ul>
+                        <li><strong>src</strong>: Визначає шлях до зображення. Це обов'язковий атрибут.</li>
+                        <li><strong>alt</strong>: Описує зображення. Використовується для доступності (наприклад, для користувачів з обмеженими можливостями) і з'являється, якщо зображення не може бути завантажене. Це обов'язковий атрибут.</li>
+                        <li><strong>width</strong>: Визначає ширину зображення в пікселях або у відсотках. Може бути використаний для масштабування зображення.</li>
+                        <li><strong>height</strong>: Визначає висоту зображення в пікселях або у відсотках. Може бути використаний для масштабування зображення.</li>
+                        <li><strong>title</strong>: Показує підказку, яка з'являється, коли курсор миші наводиться на зображення.</li>
+                    </ul>
+                    <p>Приклад використання атрибутів:</p>
+                    <pre><code>
+                &lt;img src="example.jpg" alt="Приклад зображення" width="450" height="150" title="Це приклад зображення"&gt;
+                    </code></pre>
+                </div>
+                
+                <div id="lists" class="content-section">
+                    <h4>HTML-код списків</h4>
+                    <pre><code>
+                &lt;section&gt;
+                    &lt;h2&gt;Списки (нумеровані, маркіровані)&lt;/h2&gt;
+                    &lt;h3&gt;Переваги автосервісу "Gulf Motors"&lt;/h3&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Досвідчені механіки&lt;/li&gt;
+                &lt;li&gt;Сучасне обладнання&lt;/li&gt;
+                &lt;li&gt;Гарантія на всі види робіт&lt;/li&gt;
+            &lt;/ul&gt;
+
+            &lt;h3&gt;Етапи обслуговування&lt;/h3&gt;
+            &lt;ol&gt;
+                &lt;li&gt;Попередній запис на обслуговування&lt;/li&gt;
+                &lt;li&gt;Проведення діагностики&lt;/li&gt;
+                &lt;li&gt;Погодження робіт та розрахунок вартості&lt;/li&gt;
+                &lt;li&gt;Ремонт або обслуговування автомобіля&lt;/li&gt;
+                &lt;li&gt;Завершення та видача автомобіля клієнту&lt;/li&gt;
+                    &lt;/ol&gt;
+                &lt;/section&gt;
+                    </code></pre>
+                
+                    <h4>Скріншот списків</h4>
+                    <img src="lists.jpg" alt="Скріншот списків" width="400">
+                
+                    <h4>Теорія про теги та атрибути списків</h4>
+                    <p>HTML підтримує два основні типи списків:</p>
+                    <ul>
+                        <li><strong>Маркіровані списки (&lt;ul&gt;)</strong>: використовуються для списків без порядкових номерів. Кожен елемент позначається тегом &lt;li&gt; і відображається з маркером за замовчуванням.</li>
+                        <li><strong>Нумеровані списки (&lt;ol&gt;)</strong>: використовуються для упорядкованих списків з номерами. Кожен елемент також позначається тегом &lt;li&gt;, а елементи автоматично нумеруються.</li>
+                    </ul>
+                    <p>Основні атрибути списків:</p>
+                    <ul>
+                        <li><strong>type</strong>: атрибут для &lt;ol&gt;, який дозволяє змінювати тип нумерації (наприклад, "1" для числового, "A" для алфавітного).</li>
+                        <li><strong>start</strong>: для &lt;ol&gt; встановлює початковий номер нумерації.</li>
+                        <li><strong>reversed</strong>: атрибут для &lt;ol&gt;, який дозволяє показувати нумерацію в зворотному порядку.</li>
+                    </ul>
+                </div>
+                
+
+                <div id="conclusion" class="content-section">
+                    <h4>Висновок</h4>
+                    <p>Виконання лабораторної роботи дало базові знання для створення структурованих веб-сторінок із зручною навігацією та привабливим дизайном, що відповідають сучасним стандартам. У процесі роботи було розроблено шаблон HTML-документа для звітів, який стане основою для подальшого представлення результатів усіх лабораторних робіт.</p>
+                    <p>Вивчивши структуру HTML-документа, було освоєно налаштування основних елементів, таких як заголовок, метадані, контентні секції та футер. Закріплення навичок роботи з тегами : table, img, a, ul, ol, li та form та їхніми атрибутами дозволило створити більш інформативні та структуровані веб-сторінки.</p>
+                    <p>Отже, виконана лабораторна робота стала основою для подальшого розвитку навичок веб-розробки, закріпила знання про роботу з HTML-документом, таблицями, зображеннями, посиланнями, списками та формами, а також допомогла набути практичний досвід для розробки складніших веб-інтерфейсів.</p>
+                </div>
+                
+                <!-- Інші секції... -->
+            </div>
+
+            <div id="lab1_2" class="content-section">
+                <h3>Лабораторна робота 1.2</h3>
+                </div>
+            <div id="lab2" class="content-section">
+                <h3>Лабораторна робота 2</h3>
+            </div>
+            <div id="lab2_1" class="content-section">
+                <h3>Лабораторна робота 2.1</h3>
+            </div>
+            <div id="lab3" class="content-section">
+                <h3>Лабораторна робота 3</h3>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function showLab(labId) {
+            const labs = document.querySelectorAll('.content-section');
+            labs.forEach(lab => lab.classList.remove('active'));
+            document.getElementById(labId).classList.add('active');
+        }
+
+        function showSection(sectionId) {
+            const activeLab = document.querySelector('.content-section.active');
+            if (activeLab) {
+                const sections = activeLab.querySelectorAll('div');
+                sections.forEach(section => section.style.display = 'none');
+                activeLab.querySelector(`#${sectionId}`).style.display = 'block';
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            showLab('lab1');
+            showSection('description');
+        });
+    </script>
+</body>
+
+</html>

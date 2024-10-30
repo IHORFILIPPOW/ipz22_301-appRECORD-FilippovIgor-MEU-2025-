@@ -1,0 +1,120 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif; /* Современный шрифт */
+    margin: 0;
+    padding: 0;
+    background-color: #F0F4F8; /* Светлый фон */
+}
+
+header {
+    padding: 20px;
+    display: flex;
+    background-color: #34495E; /* Темно-синий фон */
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #ECF0F1; /* Светлый акцент */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Легкая тень */
+}
+
+.header-text {
+    max-width: 70%;
+    color: #ECF0F1; /* Светлый текст */
+    font-size: 1.8em; /* Увеличенный размер шрифта */
+    font-weight: bold; /* Жирный шрифт */
+}
+
+.student-photo {
+    max-width: 180px; /* Увеличение размера изображения */
+    max-height: 180px;
+    object-fit: cover;
+    margin-left: 20px;
+    border-radius: 50%; /* Круглое изображение */
+    border: 3px solid #ECF0F1; /* Цвет контура */
+}
+
+nav {
+    background-color: #2C3E50; /* Темно-синий фон навигации */
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Перенос кнопок на новую строку */
+    gap: 15px; /* Расстояние между кнопками */
+}
+
+nav button {
+    background-color: #E67E22; /* Яркий оранжевый цвет для кнопок */
+    color: #FFFFFF; /* Белый текст */
+    border: none;
+    padding: 12px 20px; /* Увеличенные размеры кнопок */
+    cursor: pointer;
+    border-radius: 4px; /* Небольшое округление */
+    font-weight: bold; /* Жирный шрифт */
+    transition: background-color 0.3s, transform 0.2s; /* Эффект при наведении */
+}
+
+nav button:hover {
+    background-color: #D35400; /* Темный оранжевый при наведении */
+    transform: translateY(-2px); /* Легкий подъем при наведении */
+}
+
+main {
+    display: flex;
+    padding: 30px;
+    gap: 20px; /* Пространство между изображением и боковой панелью */
+}
+
+.screen-img {
+    max-width: 75%; /* Увеличение ширины изображения до 75% */
+    height: auto;
+    border: 2px solid #E67E22; /* Цвет контура */
+    border-radius: 10px; /* Уголок округления */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Легкая тень */
+}
+
+.sidebar {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Уменьшение расстояния между кнопками */
+}
+
+.sidebar button {
+    background-color: #34495E; /* Темный фон для кнопок боковой панели */
+    color: #ECF0F1; /* Светлый текст */
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 4px; /* Небольшое округление */
+    font-weight: bold; /* Жирный шрифт для кнопок */
+    transition: background-color 0.3s, transform 0.2s; /* Эффект при наведении */
+}
+
+.sidebar button:hover {
+    background-color: #2C3E50; /* Темный фон при наведении */
+    transform: scale(1.05); /* Увеличение при наведении */
+}
+
+.content {
+    flex-grow: 1;
+    background-color: #FFFFFF; /* Белый фон для контента */
+    padding: 20px;
+    border-radius: 10px; /* Округленные углы */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Мягкая тень */
+}
+
+.content-section {
+    display: none; /* Скрытие секций по умолчанию */
+}
+
+.content-section.active {
+    display: block; /* Показ активной секции */
+}
+
+.grouped-link {
+    margin-right: 10px; 
+    text-decoration: none; 
+    color: #34495E; /* Темно-синий цвет для ссылок */
+}
+
+.grouped-link:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
