@@ -1,120 +1,125 @@
 body {
-    font-family: 'Helvetica Neue', sans-serif; /* Современный шрифт */
+    font-family: 'Helvetica Neue', sans-serif; /* Шрифт */
     margin: 0;
     padding: 0;
-    background-color: #F0F4F8; /* Светлый фон */
+    background-color: #F0F4F8; /* Світлий фон */
 }
 
 header {
     padding: 20px;
     display: flex;
-    background-color: #34495E; /* Темно-синий фон */
+    background-color: #34495E; /* Темно-синій фон */
     justify-content: space-between;
     align-items: center;
-    border-bottom: 3px solid #ECF0F1; /* Светлый акцент */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Легкая тень */
+    border-bottom: 3px solid #ECF0F1; /* Світлий акцент */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Легка тінь */
 }
 
 .header-text {
     max-width: 70%;
-    color: #ECF0F1; /* Светлый текст */
-    font-size: 1.8em; /* Увеличенный размер шрифта */
-    font-weight: bold; /* Жирный шрифт */
+    color: #ECF0F1; /* Світлий текст */
+    font-size: 1.8em; /* Збільшений шрифт текста */
+    font-weight: bold; /* Жирний шрифт */
 }
 
 .student-photo {
-    max-width: 180px; /* Увеличение размера изображения */
+    max-width: 180px; /* Збільшення розміру зображення */
     max-height: 180px;
     object-fit: cover;
     margin-left: 20px;
-    border-radius: 50%; /* Круглое изображение */
-    border: 3px solid #ECF0F1; /* Цвет контура */
+    border-radius: 50%; /* Кругле зображення */
+    border: 3px solid #ECF0F1; /* Колір контура */
 }
 
 nav {
-    background-color: #2C3E50; /* Темно-синий фон навигации */
+    background-color: #2C3E50; /* Темно-синій фон навігації */
     padding: 15px;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Перенос кнопок на новую строку */
-    gap: 15px; /* Расстояние между кнопками */
+    flex-wrap: wrap; /* Перенос кнопок на нову строку */
+    gap: 15px; /* Відстань між кнопками */
 }
 
 nav button {
-    background-color: #E67E22; /* Яркий оранжевый цвет для кнопок */
-    color: #FFFFFF; /* Белый текст */
+    background-color: #E67E22; /* Помаранчевий колір для кнопок */
+    color: #FFFFFF; /* Білий текст */
     border: none;
-    padding: 12px 20px; /* Увеличенные размеры кнопок */
+    padding: 12px 20px; /* Збільшені розміри кнопок */
     cursor: pointer;
-    border-radius: 4px; /* Небольшое округление */
+    border-radius: 4px; /* Невелике заокруглення */
     font-weight: bold; /* Жирный шрифт */
-    transition: background-color 0.3s, transform 0.2s; /* Эффект при наведении */
+    transition: background-color 0.3s, transform 0.2s; /* Еффект при наведенні */
 }
 
 nav button:hover {
-    background-color: #D35400; /* Темный оранжевый при наведении */
-    transform: translateY(-2px); /* Легкий подъем при наведении */
+    background-color: #D35400; /* Темний помаранчевий при наведенні */
+    transform: translateY(-2px); /* Легкий підйом при наведенні */
 }
 
 main {
-    display: flex;
+    
     padding: 30px;
-    gap: 20px; /* Пространство между изображением и боковой панелью */
+    gap: 20px; /* Відстань між зображенням та боковою панеллю */
 }
 
 .screen-img {
-    max-width: 75%; /* Увеличение ширины изображения до 75% */
+    max-width: 75%; /* Збільшення ширини зображення до 75% */
     height: auto;
-    border: 2px solid #E67E22; /* Цвет контура */
-    border-radius: 10px; /* Уголок округления */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Легкая тень */
+    border: 2px solid #E67E22; /* Колір контура */
+    border-radius: 10px; /* Кут округлення */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Легка тінь */
 }
 
 .sidebar {
     width: 220px;
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Уменьшение расстояния между кнопками */
+    gap: 10px; /* Зменшення відстані між кнопками */
 }
 
 .sidebar button {
-    background-color: #34495E; /* Темный фон для кнопок боковой панели */
-    color: #ECF0F1; /* Светлый текст */
+    background-color: #34495E; /* Темний фон для кнопок бокової панелі */
+    color: #ECF0F1; /* Світлий текст */
     border: none;
     padding: 12px;
     cursor: pointer;
-    border-radius: 4px; /* Небольшое округление */
-    font-weight: bold; /* Жирный шрифт для кнопок */
-    transition: background-color 0.3s, transform 0.2s; /* Эффект при наведении */
+    border-radius: 4px; /* Невелике заокруглення */
+    font-weight: bold; /* Жирний шрифт для кнопок */
+    transition: background-color 0.3s, transform 0.2s; /* Еффект при наведенні */
 }
 
 .sidebar button:hover {
-    background-color: #2C3E50; /* Темный фон при наведении */
-    transform: scale(1.05); /* Увеличение при наведении */
+    background-color: #2C3E50; /* Темний фон при наведенні */
+    transform: scale(1.05); /* Збільшення при наведенні */
 }
 
-.content {
-    flex-grow: 1;
-    background-color: #FFFFFF; /* Белый фон для контента */
-    padding: 20px;
-    border-radius: 10px; /* Округленные углы */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Мягкая тень */
-}
-
-.content-section {
-    display: none; /* Скрытие секций по умолчанию */
-}
-
-.content-section.active {
-    display: block; /* Показ активной секции */
-}
 
 .grouped-link {
     margin-right: 10px; 
     text-decoration: none; 
-    color: #34495E; /* Темно-синий цвет для ссылок */
+    color: #34495E; /* Темно-синій колір для ссилок */
 }
 
 .grouped-link:hover {
-    text-decoration: underline; /* Подчеркивание при наведении */
+    text-decoration: underline; /* Підкреслення при наведенні */
 }
+
+/* Стиль для контенту */
+.text-content {
+    background-color: #dad7d3;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.content-section {
+    display: none;
+    width: 100%;
+}
+
+.content-section.active {
+    display: flex;
+    width: 1400px; /*Нерухомий фон під текст, наповнення лабораторних робіт*/}
+

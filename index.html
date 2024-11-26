@@ -32,20 +32,20 @@
     </nav>
 
     <main>
-        <div class="sidebar">
-            <button onclick="showSection('description')">Опис предметного середовища</button>
-            <button onclick="showSection('goal')">Тема, мета, місце розташування лабораторної номер 1</button>
-            <button onclick="showSection('structure')">Cтруктура документа</button>
-            <button onclick="showSection('tables')">HTML-код таблиць</button>
-            <button onclick="showSection('images')">HTML-код зображення</button>
-            <button onclick="showSection('lists')">HTML-код списки</button>
-            <button onclick="showSection('conclusion')">Висновки</button>
-        </div>
 
         <div class="content">
             <!-- Лабораторна робота 1 -->
             <div id="lab1" class="content-section">
-                <div id="description">
+                <div class="sidebar">
+                <button onclick="showSection('description', 'lab1')">Опис предметного середовища</button>
+                <button onclick="showSection('goal', 'lab1')">Тема, мета, місце розташування лабораторної номер 1</button>
+                <button onclick="showSection('structure', 'lab1')">Cтруктура документа</button>
+                <button onclick="showSection('tables', 'lab1')">HTML-код таблиць</button>
+                <button onclick="showSection('images', 'lab1')">HTML-код зображення</button>
+                <button onclick="showSection('lists', 'lab1')">HTML-код списки</button>
+                <button onclick="showSection('conclusion', 'lab1')">Висновки</button>
+            </div>
+            <div id="description" class="lab1-section content-section text-content">
                     <h4>Опис предметного середовища</h4>
                     <p>
                         <strong>Тема:</strong> Створення веб-сайту для автосервісу "Gulf Motors".<br />
@@ -60,7 +60,7 @@
                         </li>
                     </ul>
                 </div>
-                <div id="goal">
+                <div id="goal" class="lab1-section content-section text-content">
                     <p><strong>Тема:</strong> Структура HTML-документа. Вибір предметної галузі.
                     робота з посиланнями, таблицями, зображеннями, списками в html-документі.</p><br/>
                     <p><strong>Мета:</strong> придбати практичні навички роботи з HTML-документом, таблицями, зображеннями, посиланнями, списками, формами
@@ -79,7 +79,7 @@
 </a>
 
                 </div>
-                <div id="structure">
+                <div id="structure"class="lab1-section content-section text-content">
                     <h4>СТРУКТУРА ДОКУМЕНТА</h4>
                     <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="uk"&gt;
@@ -143,7 +143,7 @@
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
                 </div>
-                <div id="tables" class="content-section">
+                <div id="tables"  class="lab1-section content-section text-content">
                     <h4>HTML-код таблиці</h4>
                     <pre><code>
                 &lt;table&gt;
@@ -208,7 +208,7 @@
                 </div>
                 
 
-                <div id="images" class="content-section">
+                <div id="images" class="lab1-section content-section text-content">
                     <h4>HTML-код зображення</h4>
                     <pre><code>
                 &lt;section&gt;
@@ -235,7 +235,7 @@
                     </code></pre>
                 </div>
                 
-                <div id="lists" class="content-section">
+                <div id="lists"class="lab1-section content-section text-content">
                     <h4>HTML-код списків</h4>
                     <pre><code>
                 &lt;section&gt;
@@ -276,7 +276,7 @@
                 </div>
                 
 
-                <div id="conclusion" class="content-section">
+                <div id="conclusion" class="lab1-section content-section text-content">
                     <h4>Висновок</h4>
                     <p>Виконання лабораторної роботи дало базові знання для створення структурованих веб-сторінок із зручною навігацією та привабливим дизайном, що відповідають сучасним стандартам. У процесі роботи було розроблено шаблон HTML-документа для звітів, який стане основою для подальшого представлення результатів усіх лабораторних робіт.</p>
                     <p>Вивчивши структуру HTML-документа, було освоєно налаштування основних елементів, таких як заголовок, метадані, контентні секції та футер. Закріплення навичок роботи з тегами : table, img, a, ul, ol, li та form та їхніми атрибутами дозволило створити більш інформативні та структуровані веб-сторінки.</p>
@@ -287,7 +287,41 @@
             </div>
 
             <div id="lab1_2" class="content-section">
-                <h3>Лабораторна робота 1.2</h3>
+                <div class="sidebar">
+                    <button onclick="showSection('goal-1_2', 'lab1_2')">Тема, мета, місце розташування сайту та
+                        звіту</button>
+                    <button onclick="showSection('styleConnection', 'lab1_2')">СПОСОБИ ПІДКЛЮЧЕННЯ СТИЛІВ з
+                        прикладами</button>
+                    <button onclick="showSection('selectors', 'lab1_2')">СЕЛЕКТОРИ</button>
+                    <button onclick="showSection('tagSelector', 'lab1_2')">Селектор тегу</button>
+                    <button onclick="showSection('classSelector', 'lab1_2')">Селектор класу</button>
+                    <button onclick="showSection('idSelector', 'lab1_2')">Селектор ідентифікатор</button>
+                    <button onclick="showSection('otherSelectors', 'lab1_2')">Інші селектори</button>
+                    <button onclick="showSection('independentWork2', 'lab1_2')">Самостійна робота №2</button>
+                    <button onclick="showSection('googleFonts', 'lab1_2')">Шрифт.Google Fonts</button>
+                    <button onclick="showSection('cssTablesBackgroundLists', 'lab1_2')">CSS:Таблиці.Фон.Списки</button>
+                    <button onclick="showSection('cssAdvanced', 'lab1_2')">CSS-просунутий</button>
+                    <button onclick="showSection('conclusions-1_2', 'lab1_2')">Висновки</button>
+                </div>
+                <div id="goal-1_2" class="lab1_2-section content-section text-content">
+                    <p><strong>Тема:</strong>КАСКАДНІ ТАБЛИЦІ СТИЛІВ. СЕЛЕКТОРИ .ІДЕНТИФІКАТОРИ. СТИЛЬОВЕ ОФОРМЛЕННЯ
+                        ТЕКСТОВИХ ЕЛЕМЕНТІВ В HTML-ДОКУМЕНТАХ.</p><br />
+                    <p><strong>Мета:</strong>придбати практичні навички роботи з селекторами: тегів, класів,
+                        ідентифікаторів; списками, різноманітними властивостями
+                        кольору і фону, оформленням текстових елементів/
+                    </p>
+                    <a href="https://bilberryyy.github.io/ipz22_301-appWEB-DerkachDaria-MEU-2025/#">Посилання на
+                        репозиторій на живу сторінку власного WEB-застосунку</a><br />
+                    <a href="https://github.com/bilberryyy/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025">Посилання на
+                        репозиторій власного WEB-застосунку</a><br />
+                    <a href="https://github.com/bilberryyy/ipz22_301-appRECORD-DerkachDaria-MEU-2025">Посилання на
+                        репозиторій звітного HTML-документа</a><br />
+                    <a href="https://bilberryyy.github.io/ipz22_301-appRECORD-DerkachDaria-MEU-2025/">Посилання на
+                        репозиторій на живу сторінку звітного HTML-документ</a><br />
+                    <a href="https://github.com/bilberryyy/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025">Посилання на
+                        репозиторій з самостійними роботами</a><br />
+                    <a href="https://bilberryyy.github.io/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025/">Посилання на
+                        репозиторій живу сторінку з самостійними роботами</a><br />
                 </div>
             <div id="lab2" class="content-section">
                 <h3>Лабораторна робота 2</h3>
@@ -302,26 +336,41 @@
     </main>
 
     <script>
+        // Функція для відображення вибраної лабораторної роботи
         function showLab(labId) {
             const labs = document.querySelectorAll('.content-section');
             labs.forEach(lab => lab.classList.remove('active'));
             document.getElementById(labId).classList.add('active');
         }
 
-        function showSection(sectionId) {
-            const activeLab = document.querySelector('.content-section.active');
+        // Функція для відображення вибраного розділу у вибраній лабораторній роботі
+        function showSection(sectionId, labId) {
+            const activeLab = document.getElementById(labId);
             if (activeLab) {
-                const sections = activeLab.querySelectorAll('div');
+                const sections = activeLab.querySelectorAll(`.${labId}-section`);
                 sections.forEach(section => section.style.display = 'none');
                 activeLab.querySelector(`#${sectionId}`).style.display = 'block';
             }
         }
 
+        // Ініціалізація: показ першої лабораторної роботи і першого розділу
         document.addEventListener("DOMContentLoaded", () => {
             showLab('lab1');
-            showSection('description');
+            showSection('description', 'lab1');
+        });
+
+        document.querySelectorAll('.sidebar button').forEach(button => {
+            button.addEventListener('click', () => {
+                document.querySelectorAll('.sidebar button').forEach(btn => btn.classList.remove('active-button'));
+                button.classList.add('active-button');
+            });
+        });
+
+        document.querySelectorAll('nav button').forEach(button => {
+            button.addEventListener('click', () => {
+                document.querySelectorAll('nav button').forEach(btn => btn.classList.remove('active-button'));
+                button.classList.add('active-button');
+            });
         });
     </script>
 </body>
-
-</html>
