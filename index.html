@@ -67,7 +67,7 @@
                     Створити шаблон звітного HTML-документом для відображення результатів роботи всіх лабораторних робіт.
                     </p>
                     <a href="https://ihorfilippow.github.io/ipz22_301-appWEB-FilippovIgor--MEU-2025/" style="margin-right: 10px;">Посилання на живу веб-сторінку</a>
-<a href="https://github.com/IHORFILIPPOW/-ipz22_301-appWEB--Filippow-Ihor--MEU-2025-" style="margin-right: 30px;">Посилання на веб-сторінку</a><br/>
+<a href="https://github.com/IHORFILIPPOW/ipz22_301-appWEB-FilippovIgor--MEU-2025" style="margin-right: 30px;">Посилання на веб-сторінку</a><br/>
 
 <a href="https://ihorfilippow.github.io/ipz22_301-appRECORD-FilippovIgor-MEU-2025-/" style="margin-right: 10px;">Посилання на живу сторінку звітного HTML документа</a>
 <a href="https://github.com/IHORFILIPPOW/ipz22_301-appRECORD-FilippovIgor-MEU-2025-" style="margin-right: 30px;">Посилання на сторінку звітного HTML документа</a><br/>
@@ -310,19 +310,576 @@
                         ідентифікаторів; списками, різноманітними властивостями
                         кольору і фону, оформленням текстових елементів/
                     </p>
-                    <a href="https://bilberryyy.github.io/ipz22_301-appWEB-DerkachDaria-MEU-2025/#">Посилання на
-                        репозиторій на живу сторінку власного WEB-застосунку</a><br />
-                    <a href="https://github.com/bilberryyy/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025">Посилання на
-                        репозиторій власного WEB-застосунку</a><br />
-                    <a href="https://github.com/bilberryyy/ipz22_301-appRECORD-DerkachDaria-MEU-2025">Посилання на
-                        репозиторій звітного HTML-документа</a><br />
-                    <a href="https://bilberryyy.github.io/ipz22_301-appRECORD-DerkachDaria-MEU-2025/">Посилання на
-                        репозиторій на живу сторінку звітного HTML-документ</a><br />
-                    <a href="https://github.com/bilberryyy/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025">Посилання на
-                        репозиторій з самостійними роботами</a><br />
-                    <a href="https://bilberryyy.github.io/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025/">Посилання на
-                        репозиторій живу сторінку з самостійними роботами</a><br />
+                    <a href="https://ihorfilippow.github.io/ipz22_301-appWEB-FilippovIgor--MEU-2025/" style="margin-right: 10px;">Посилання на живу веб-сторінку</a>
+<a href="https://github.com/IHORFILIPPOW/ipz22_301-appWEB-FilippovIgor--MEU-2025" style="margin-right: 30px;">Посилання на веб-сторінку</a><br/>
+
+<a href="https://ihorfilippow.github.io/ipz22_301-appRECORD-FilippovIgor-MEU-2025-/" style="margin-right: 10px;">Посилання на живу сторінку звітного HTML документа</a>
+<a href="https://github.com/IHORFILIPPOW/ipz22_301-appRECORD-FilippovIgor-MEU-2025-" style="margin-right: 30px;">Посилання на сторінку звітного HTML документа</a><br/>
+
+<a href="https://ihorfilippow.github.io/ipz22_301--app-INDEPENDENT--FilippovIgor-MEU-2025-/" style="margin-right: 10px;">Посилання на живу сторінку з самостійними роботами</a>
+<a href="https://github.com/IHORFILIPPOW/ipz22_301--app-INDEPENDENT--FilippovIgor-MEU-2025- ">Посилання на сторінку з самостійними роботами</a></a><br />
                 </div>
+                <div id="styleConnection" class="lab1_2-section content-section text-content">
+                    <h2>Способи підключення стилів</h2>
+            
+                    <h3>1. Вбудовані стилі</h3>
+                    <p>Стилі додаються безпосередньо до HTML-елемента через атрибут <code>style</code>.</p>
+                    <pre><code>&lt;h1 style="color: green; font-size: 18px;"&gt;Текст із вбудованим стилем&lt;/h1&gt;</code></pre>
+            
+                    <h3>2. Внутрішні стилі</h3>
+                    <p>Внутрішні стилі додаються в документ за допомогою блоку <code>&lt;style&gt;</code> у секції
+                        <code>&lt;head&gt;</code>.
+                    </p>
+                    <pre><code>&lt;head&gt;
+                                    &lt;style&gt;
+                                        h1 {
+                                            color: green;
+                                            font-size: 18px;
+                                        }
+                                    &lt;/style&gt;
+                                &lt;/head&gt;
+                                &lt;body&gt;
+                                    &lt;h1&gt;Текст із внутрішнім стилем&lt;/h1&gt;
+                                &lt;/body&gt;</code></pre>
+            
+                    <h3>3. Зовнішні стилі</h3>
+                    <p>Зовнішні стилі підключаються через окремий CSS-файл за допомогою тега <code>&lt;link&gt;</code> у
+                        секції
+                        <code>&lt;head&gt;</code>. Це найпоширеніший спосіб, який дозволяє розділити HTML і CSS-код.
+                    </p>
+                    <pre><code>&lt;head&gt;
+                                    &lt;link rel="stylesheet" href="styles.css"&gt;
+                                &lt;/head&gt;
+                                &lt;body&gt;
+                                    &lt;h1&gt;Текст із зовнішнім стилем&lt;/h1&gt;
+                                &lt;/body&gt;</code></pre>
+            
+                    <h3>4. Підключення за допомогою @import</h3>
+                    <p>Правило <code>@import</code> дозволяє підключати один або більше зовнішніх CSS-файлів у головному
+                        CSS-файлі.
+                    </p>
+                    <pre><code>/* Вміст файлу main.css */
+                                @import url("styles.css");
+                                
+                                h1 {
+                                    color: black;
+                                }</code></pre>
+                </div>
+                <div id="selectors" class="lab1_2-section content-section text-content">
+                    <h2>Селектори</h2>
+                    <p>Цей фрагмент показує застосування CSS-селекторів для вибору елементів на веб-сторінці.</p>
+            
+                    <div>
+                        <h3>Селектор за тегом</h3>
+                       <p>Вибирає всі елементи з певним тегом. Наприклад, <code>div</code> вибирає всі блоки.</p> <code>&lt;div&gt;Текст блоку&lt;/div&gt;</code>
+                    </div>
+            
+                    
+                    <div>
+                        <h3>Селектор за класом</h3> <p>Вибирає всі елементи з певним класом. Наприклад, <code>.highlight</code> вибирає всі елементи з класом "highlight".</p> <code>&lt;div class="highlight"&gt;Текст&lt;/div&gt;</code>
+                    </div>
+            
+                    
+                    <div>
+                        <h3>Селектор за ідентифікатором</h3> <p>Вибирає елемент за його унікальним ідентифікатором. Наприклад, <code>#header</code> вибирає елемент з id "header".</p> <code>&lt;div id="header"&gt;Заголовок&lt;/div&gt;</code>
+                    </div>
+            
+                    
+                    <div>
+                        <h3>Селектор за атрибутом</h3> <p>Вибирає елементи, що мають певний атрибут або його значення. Наприклад, <code>[href="#"]</code> вибирає всі елементи з атрибутом href="#".</p> <code>&lt;a href="#"&gt;Посилання&lt;/a&gt;</code>
+                    </div>
+            
+                    
+                    <div>
+                        <h3>Комбінація селекторів</h3> <p>Ви можете комбінувати селектори для більш точного вибору елементів, наприклад, <code>section.highlight a</code> вибирає всі посилання всередині елементів з класом "highlight".</p> <code>&lt;section class="highlight"&gt;&lt;a href="#"&gt;Посилання&lt;/a&gt;&lt;/section&gt;</code>
+                    </div>
+                </div>
+                <div id="tagSelector" class="lab1_2-section content-section text-content">
+                    <h2>Селектор тегу</h2>
+            
+                    <p>У цьому прикладі ми використовуємо селектор тегу <code>&lt;h1&gt;</code>, щоб застосувати стилі
+                        до заголовка.</p>
+            
+                    <h3>HTML-код:</h3>
+                    <pre>
+                                    <code>
+                            &lt;header&gt;
+                                    &lt;h1&gt;Gulf Motors&lt;/h1&gt;
+                                &lt;/div&gt;
+                            &lt;/header&gt;
+                                    </code>
+                                </pre>
+            
+                    <h3>CSS-код:</h3>
+                    <pre>
+                                    <code>
+                            /* Стиль для тегу header */
+                            header {
+                                background-color: #000;
+                                color: #ffa500;
+                                text-align: center;
+                                padding: 1.5rem 1rem;
+                            }
+                                    </code>
+                                </pre>
+                                <h3>Результат у браузері:</h3>
+                                <img src="Screenshot 2024-11-26 164736.png"/>
+
+            
+                
+                </div>
+                <div id="classSelector" class="lab1_2-section content-section text-content">
+                    <h2>Селектор класу</h2>
+            
+                    <p>У цьому прикладі ми використовуємо селектор класу <code>.address-block</code>, щоб стилізувати
+                        блок адреси у
+                        нашому веб-застосунку.</p>
+            
+                    <h3>HTML-код:</h3>
+                    <pre>
+                                                    <code>
+                                            &lt;div class="address-block"&gt;
+                                                &lt;h3&gt;Наша адреса&lt;/h3&gt;
+                                                
+                                                        &lt;p&gt;М. Київ, Проспект Лобановського 5ж&lt;/p&gt;
+                                                   
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                                    </code>
+                                                </pre>
+            
+                    <h3>CSS-код:</h3>
+                    <pre>
+                                                    <code>
+                                            
+                                                        /* Стилі для блоку з адресою */
+                                                        .address-block {
+                                                            text-align: center;
+                                                            background-color: #333;
+                                                            color: #ffa500;
+                                                            padding: 1.5rem;
+                                                            border-radius: 10px;
+                                                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                                                            margin-top: 2rem;
+                                                        }
+                                                        
+                                                        .address-block h3 {
+                                                            font-size: 1.8rem;
+                                                            margin-bottom: 1rem;
+                                                        }
+                                                        
+                                                        .address-block p {
+                                                            font-size: 1.2rem;
+                                                        }
+                                                    </code>
+                                                </pre>
+            
+                                                <h3>Результат у браузері:</h3>
+                                                <img src="Screenshot 2024-11-26 170155.png"/>
+            
+                    
+                </div>
+                <div id="idSelector" class="lab1_2-section content-section text-content">
+                    <p>У цьому прикладі ми використовуємо селектор ідентифікатора <code>#contact-info</code>, щоб
+                        стилізувати форму
+                        контактів у нашому веб-застосунку.</p>
+                    <h3>HTML код</h3>
+                    <pre><code>
+                        <code>
+                            &lt;div class="#contact-info"&gt;
+                                &lt;h3&gt;Контакти&lt;/h3&gt;
+                                
+                                        &lt;p&gt;Телефон: 0505671718&lt;/p&gt;
+                                        &lt;p&gt;Телефон: 0939729660&lt;/p&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                                    </code>
+                                                        </code></pre>
+            
+                    <h3>CSS код</h3>
+                    <pre><code>
+                        #contact-info {
+                            text-align: center;
+                            background-color: #fff;
+                            padding: 1rem;
+                            border-radius: 10px;
+                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                        }
+                
+                        #contact-info h3 {
+                            color: #000;
+                        }
+                
+                        #contact-info p {
+                            font-size: 1.2rem;
+                            color: #555;
+                        }
+                                                        </code></pre>
+            
+            
+                    <p>У браузері блок з контактами виглядатиме так:</p>
+                    <img src="Screenshot 2024-11-26 172113.png" alt="Скріншот">
+            
+                </div>
+                <div id="otherSelectors" class="lab1_2-section content-section text-content">
+                    <h2>Інші селектори</h2>
+            
+                    <p>У цьому прикладі ми застосуємо різні типи CSS-селекторів, такі як сусідні, дочірні селектори,
+                        селектор атрибута
+                        та універсальний селектор.</p>
+            
+                    <h3>1. Сусідні селектори</h3>
+                    <p>Сусідні селектори дозволяють вибирати елементи, які йдуть безпосередньо після іншого елемента.
+                    </p>
+                    <pre><code>
+                        h1 + p {
+                            color: red;
+                        }
+                                                </code></pre>
+                    <p>У цьому прикладі цей код зробить червоним текст усіх p, які одразу слідують за h1.</p>
+            
+                    <h3>2. Дочірні селектори</h3>
+                    <p>Дочірні селектори дозволяють вибирати елементи, які є прямими нащадками іншого елемента.</p>
+                    <pre><code>
+                        nav > a {
+                            text-decoration: none;
+                        }                        
+                                                </code></pre>
+                    <p>У цьому прикладі цей код прибирає підкреслення лише у a, які є прямими дітьми nav.
+                    </p>
+            
+                    <h3>3. Селектор атрибута</h3>
+                    <p>Селектор атрибута дозволяє вибирати елементи за значенням їх атрибута.</p>
+                    <pre><code>
+                        #contact-form input:focus {
+                            border-color: #333;
+                        }
+                        
+                                                </code></pre>
+                    <p>У цьому прикладі цей селектор стилізує input, коли він у стані :focus (користувач взаємодіє з ним).
+                    </p>
+            
+                    <h3>4. Універсальний селектор</h3>
+                    <p>Універсальний селектор вибирає всі елементи на сторінці.</p>
+                    <pre><code>
+                        * {
+                            margin: 0;
+                            padding: 0;
+                        }
+                        
+                                                </code></pre>
+                    <p>Цей код скидає всі відступи (внутрішні та зовнішні) для всіх елементів.</p>
+                </div>
+                <div id="googleFonts" class="lab1_2-section content-section text-content">
+                    <h2>Шрифти Google Fonts</h2>
+            
+                    <p>У цьому прикладі ми підключаємо шрифт <strong>Roboto</strong> та <strong>sans-serif</strong> за допомогою Google Fonts.</p>
+                    <img src="Screenshot 2024-11-26 181122.png" alt="Підключення шрифтів Google Fonts в коді" class="screen-img " />
+                </div>
+                <div id="cssTablesBackgroundLists" class="lab1_2-section content-section text-content">
+                    <h2>CSS: Шрифти Текст Таблиці Фон CSS Просунутий</h2>
+        
+            
+                    <h3>1. Шрифти</h3>
+                    <p>Для стилізації тексту на сайті ми використовуємо шрифт <strong>Roboto</strong> та <strong>sans-serif</strong> з Google Fonts.
+                        </p>
+                    <pre><code>
+                                                &lt;link href=""https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">" rel="stylesheet"&gt;
+                                            
+                                                /* Основні стилі */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe4b5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Шапка */
+        header {
+            background-color: #000;
+            color: #ffa500;
+            text-align: center;
+            padding: 1.5rem 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            font-family: 'Roboto', sans-serif;
+        }
+                                                </code></pre>
+            
+                    <h3>2. Контури</h3>
+                    <p>Контури додаються до елементів за допомогою властивості <code>text-shadow</code> для тексту і
+                        <code>box-shadow</code> для контейнерів.
+                    </p>
+                    <pre><code>
+                                                h1 {
+                                                    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+                                                }
+                                            
+                                                .content-section {
+                                                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                                                }
+                                                </code></pre>
+            
+                    <h3>3. Фон</h3>
+                    <p>Фон для елементів може бути однотонним або градієнтним. Ось приклад однотонного фону:
+                    </p>
+                    <pre><code>
+                        body {
+                            background-color: #87CEEB; /* Світло-блакитний фон */
+                            margin: 0;
+                            padding: 0;
+                        }
+                        
+                                                </code></pre>
+            
+                    <h3>4. Колір тексту</h3>
+                    <p>Для зміни кольору тексту використовуються властивості <code>color</code>.
+                        Приклад:
+                    </p>
+                    <pre><code>
+                        body {
+                            color: #333;
+                        }
+                        
+                        header {
+                            color: #ffa500;
+                        }
+                        
+                        nav a {
+                            color: #ffa500;
+                        }
+                        
+                                                </code></pre>
+            
+                    <h3>5. CSS-властивості для таблиць</h3>
+                    <p>Таблиці можна стилізувати за допомогою CSS, додаючи контури, відступи та змінюючи кольори фону.
+                    </p>
+                    <pre><code>
+                        table {
+                            width: 100%;
+                            border-collapse: collapse;
+                            margin: 1rem 0;
+                        }
+                        
+                        table th, table td {
+                            border: 1px solid #ddd;
+                            padding: 0.8rem;
+                            text-align: center;
+                        }
+                        
+                        table th {
+                            background-color: #ffa500;
+                            color: #000;
+                        }
+                        
+                        table tr:nth-child(even) {
+                            background-color: #f9f9f9;
+                        }
+                        
+                        table tr:hover {
+                            background-color: #f1f1f1;
+                        }                                            
+                                                
+                                                </code></pre>
+            
+                    <h3>6. Багаторівневі списки</h3>
+                    <pre><code>
+                        ul ul {
+                            margin-left: 20px;
+                            list-style-type: circle;
+                        }
+                        
+                                                </code></pre>
+            
+                </div>
+                <div id="cssAdvanced" class="lab1_2-section content-section text-content">
+                    <h3>7. CSS Просунутий</h3>
+                    <p>Просунуте використання CSS включає застосування анімацій, псевдокласів та псевдоелементів. Ось
+                        приклад анімації:
+                        </p>
+                    <pre><code>
+                        /* Основний стиль кнопки */
+                        .animated-button {
+                            background-color: #ffa500;
+                            color: #fff;
+                            padding: 10px 20px;
+                            font-size: 16px;
+                            border: none;
+                            border-radius: 5px;
+                            cursor: pointer;
+                            transition: transform 0.3s ease, background-color 0.3s ease;
+                        }
+                
+                        /* Анімація при наведенні */
+                        .animated-button:hover {
+                            background-color: #ff5722; /* Зміна кольору */
+                            transform: scale(1.1); /* Збільшення */
+                        }
+                
+                        /* Додатковий ефект натискання */
+                        .animated-button:active {
+                            transform: scale(0.95); /* Зменшення при натисканні */
+                        }
+                                </code></pre>
+            
+                    <h3>Приклад таблиці</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>№</th>
+                                <th>Назва</th>
+                                <th>Опис</th>
+                                <th>Ціна (грн)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Діагностика</td>
+                                <td>Повна діагностика авто</td>
+                                <td>1200</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Заміна масла</td>
+                                <td>Швидка і якісна заміна</td>
+                                <td>500</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Ремонт двигуна</td>
+                                <td>Ремонт будь-якої складності</td>
+                                <td>від 2000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+            
+                    <h3>Приклад багаторівневого списку</h3>
+                    <ul>
+                        <li>Компанія "ТехноСвіт"
+                            <ul>
+                                <li>Відділ розробки
+                                    <ul>
+                                        <li>Проектування програмного забезпечення</li>
+                                        <li>Тестування програмних продуктів</li>
+                                    </ul>
+                                </li>
+                                <li>Відділ маркетингу
+                                    <ul>
+                                        <li>Розробка рекламних кампаній</li>
+                                        <li>Дослідження ринку</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Партнери
+                            <ul>
+                                <li>Локальні компанії
+                                    <ul>
+                                        <li>"ЕлектроТех"</li>
+                                        <li>"СофтЛаб"</li>
+                                    </ul>
+                                </li>
+                                <li>Міжнародні партнери
+                                    <ul>
+                                        <li>"TechGlobal"</li>
+                                        <li>"Innovative Solutions"</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Контакти
+                            <ul>
+                                <li>Головний офіс: Київ, вул. Наукова, 15</li>
+                                <li>Філії
+                                    <ul>
+                                        <li>Львів</li>
+                                        <li>Одеса</li>
+                                        <li>Харків</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="conclusions-1_2" class="lab1_2-section content-section text-content">
+                    <h2>Висновки</h2>
+                    <p>
+                        У ході виконання завдання було здобуто практичні навички роботи з каскадними таблицями стилів (CSS) для оформлення веб-сторінок на основі HTML. Розглянуто та реалізовано такі способи застосування стилів:
+
+</p> <ul> <li>Вбудовані стилі (inline styles) – використовуються для одноразового застосування форматування до конкретних елементів.</li> <li>Внутрішні стилі (internal styles) – підходять для налаштування окремих сторінок.</li> <li>Зовнішні стилі (external styles) – ефективні для підтримки та структурування великих веб-проєктів.</li> <li>Метод <code>@import</code> – дозволяє підключати додаткові файли стилів.</li> </ul> <p> Вивчено принципи використання різних типів селекторів: елементів, класів, ID, атрибутів, вкладених і суміжних елементів. </p> <p> Крім того, застосовано численні властивості CSS для оформлення текстів, списків, фонів і створення інтерактивних елементів. Висновок: використання CSS відкриває можливості для створення естетично привабливих, функціональних і зручних веб-сторінок. </p>
+                    <h2>Контрольні питання</h2>
+            
+                    <h3>1. Для чого використовуються каскадні таблиці стилів?</h3>
+                    <p>Каскадні таблиці стилів (CSS) використовуються для оформлення та стилізації веб-сторінок, створюючи привабливий і зручний для користувача дизайн. Вони дозволяють задавати кольори, шрифти, розміри, відступи, а також створювати складні макети сторінок. CSS забезпечує розділення структури HTML-коду та його стилістичного оформлення, що спрощує підтримку і розвиток веб-проєктів.</p>
+            
+                    <h3>2. Які методи визначення стилів у HTML-документі ви знаєте?</h3>
+                    <ul>
+                        <li>Вбудовані стилі (inline styles) – стилі, які задаються безпосередньо в атрибуті style елемента HTML. Вони застосовуються до окремих елементів і використовуються для швидкого форматування.
+                        </li>
+                        <li>Внутрішні стилі (internal styles) – стилі, які визначаються в секції style всередині HTML-документа, зазвичай у частині head. Вони використовуються для форматування елементів на певній сторінці.
+                        </li>
+                        <li>Зовнішні стилі (external styles) – стилі, що зберігаються в окремих CSS-файлах і підключаються до HTML-документа через тег link. Це найбільш зручний і ефективний спосіб організації стилів для великих веб-проєктів.
+                        </li>
+                    </ul>
+            
+                    <h3>3. У чому різниця між принципами каскадування і спадкування?</h3>
+                    <p>
+                        Принцип каскадування визначає, який стиль застосовувати, коли до елемента одночасно застосовуються кілька стилів з різних джерел (вбудовані, внутрішні або зовнішні стилі). Спадкування описує процес передачі стилів від батьківських елементів до нащадків, де дочірні елементи автоматично отримують деякі стилі від батьків. Різниця між ними полягає в тому, що каскадування визначає порядок пріоритетів, а спадкування — це процес передачі властивостей між елементами.
+                    </p>
+            
+                    <h3>4. Як в HTML-документі оформлюються селектори тегу і класу?</h3>
+                    <p>В HTML-документі селектор тегу оформлюється за допомогою назви тегу, наприклад, p {} для всіх елементів p, а селектор класу — за допомогою крапки перед назвою класу, наприклад, .button {} для елементів з класом button.
+                        
+                    <strong>Селектор тегу:</strong> Оформлюється через назву тега, наприклад:
+                    <pre><code>
+                                        p {
+                                            color: red;
+                                        }
+                                        </code></pre>
+                    <strong>Селектор класу:</strong> Починається з крапки і застосовується до елементів з відповідним
+                    атрибутом
+                    <code>class</code>:
+                    <pre><code>
+                        .card {
+                            background-color: lightgray;
+                          }
+                          
+                                        </code></pre>
+                    </p>
+            
+                    <h3>5. Для чого використовується ідентифікатор?</h3>
+                    <p>Ідентифікатор (ID) використовується для унікальної ідентифікації елемента на сторінці, що дозволяє застосовувати стилі або маніпулювати ним через JavaScript. Кожен ID має бути унікальним на сторінці, що дозволяє чітко визначити конкретний елемент.
+                    </p>
+            
+                    <h3>6. Навести приклади оформлення текстових елементів</h3>
+                    <p>Приклади стилізації тексту:</p>
+                    <pre><code>
+                        p {
+                            color: red;
+                            font-size: 16px;
+                          }
+                          
+                                
+                          h1 {
+                            font-weight: bold;
+                            font-style: italic;
+                          }
+                          
+                                
+                          p {
+                            line-height: 1.5;
+                            text-align: center;
+                          }
+                          
+                                    </code></pre>
+                </div>
+            </div>
             <div id="lab2" class="content-section">
                 <h3>Лабораторна робота 2</h3>
             </div>
