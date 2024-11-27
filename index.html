@@ -880,9 +880,1126 @@
                                     </code></pre>
                 </div>
             </div>
+            <!-- Лабораторна робота 2_1 -->
             <div id="lab2" class="content-section">
-                <h3>Лабораторна робота 2</h3>
+                <div class="sidebar">
+                    <button onclick="showSection('goal-2', 'lab2')">Тема, мета, місце розташування сайту та
+                        звіту</button>
+                    <button onclick="showSection('task1', 'lab2')">Завдання №1.Зовнішній вигляд макету. Код
+                        макету</br></button>
+                    <button onclick="showSection('task2', 'lab2')">Завдання №2</button>
+                    <button onclick="showSection('fixedTableLayout', 'lab2')">Фіксована таблична верстка</button>
+                    <button onclick="showSection('fluidTableLayout', 'lab2')">Гумова таблична верстка</button>
+                    <button onclick="showSection('fixedBlockLayout', 'lab2')">Фіксована блокова верстка</button>
+                    <button onclick="showSection('fluidBlockLayout', 'lab2')">Гумова блокова верстка</button>
+                    <button onclick="showSection('mytask2', 'lab2')">Завдання 2, 3 варіант та висновки</button>
+                    <button onclick="showSection('task3Flexbox', 'lab2')">Завдання №3 FLEXBOX</button>
+                    <button onclick="showSection('flexboxScreenshot', 'lab2')">Скріншот сторінки (Flexbox)</button>
+                    <button onclick="showSection('flexboxHTMLCode', 'lab2')">HTML-код (Flexbox)</button>
+                    <button onclick="showSection('flexboxCSSCode', 'lab2')">CSS-код (Flexbox)</button>
+                    <button onclick="showSection('conclusions-2', 'lab2')">Висновки</button>
+                </div>
+                <div id="goal-2" class="lab2-section content-section text-content">
+                    <p><strong>Тема:</strong>ВЕРСТКА HTML-ДОКУМЕНТУ. БЛОКОВА ВЕРСТКА. ВЕРСТКА ЗАСОБАМИ CSS та FLEXBOX.
+                    </p><br />
+                    <p><strong>Мета:</strong></br>⎯ придбати практичні навички роботи верстки сторінок засобами CSS,
+                        верстки на основі
+                        плаваючих елементів, з’ясувати
+                        переваги та недоліки типів макетів веб-сторінок</br>
+                        ⎯ придбати практичні навички роботи верстки сторінок засобами CSS та FLEXBOX
+                    </p>
+                    <a href="https://ihorfilippow.github.io/ipz22_301-appWEB-FilippovIgor--MEU-2025/" style="margin-right: 10px;">Посилання на живу веб-сторінку</a>
+                    <a href="https://github.com/IHORFILIPPOW/ipz22_301-appWEB-FilippovIgor--MEU-2025" style="margin-right: 30px;">Посилання на веб-сторінку</a><br/>
+                    
+                    <a href="https://ihorfilippow.github.io/ipz22_301-appRECORD-FilippovIgor-MEU-2025-/" style="margin-right: 10px;">Посилання на живу сторінку звітного HTML документа</a>
+                    <a href="https://github.com/IHORFILIPPOW/ipz22_301-appRECORD-FilippovIgor-MEU-2025-" style="margin-right: 30px;">Посилання на сторінку звітного HTML документа</a><br/>
+                    
+                    <a href="https://ihorfilippow.github.io/ipz22_301--app-INDEPENDENT--FilippovIgor-MEU-2025-/" style="margin-right: 10px;">Посилання на живу сторінку з самостійними роботами</a>
+                    <a href="https://github.com/IHORFILIPPOW/ipz22_301--app-INDEPENDENT--FilippovIgor-MEU-2025- ">Посилання на сторінку з самостійними роботами</a></a><br />
+                </div>
+                <div id="task1" class="lab2-section content-section text-content">
+                    <h2>Опис особливостей макету</h2>
+            
+                    <h3>1. Блокова гумова верстка</h3>
+                    <p>
+                        Макет побудований за принципом блокової верстки, де основні елементи, такі як
+                        <code>header</code>,
+                        <code>section</code>,
+                        <code>footer</code>, розташовані у вигляді окремих блоків. Їх
+                        розміри
+                        змінюються відповідно до ширини екрану, що є ознакою гумової верстки. 
+                    </p>
+                    <pre><code>
+                    /* Приклад гумової верстки */
+                    main {
+                        padding: 2rem;
+                        max-width: 1200px;
+                        margin: 0 auto;
+                    }
+                    
+                    </code></pre>
+                    <h3>2. Використання Flexbox</h3>
+                    <p>
+                        У макеті активно використовується Flexbox для вирівнювання елементів. 
+                    </p>
+                    <pre><code>
+                    /* У формі запису */
+                    #contact-form form {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    
+            
+                    /* У каруселі з зображеннями */
+                    #carousel div {
+                        display: flex;
+                        transition: transform 0.5s ease;
+                    }
+
+                    
+                    /* У меню послуг */
+                    .service-grid {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                    }
+                    
+                </code></pre>
+            
+                    <h3>Висновок</h3>
+                    <p>
+                        У цьому коді використовується гумова блокова верстка. Це забезпечує адаптацію макета до різних розмірів екранів, роблячи сайт зручним для перегляду як на великих моніторах, так і на мобільних пристроях.
+                    </p>
+                    
+                    <p>Скріншот головної сторінки:</p>
+                    <img src="Screenshot 2024-11-27 151409.png">;
+                    <img src="Screenshot 2024-11-27 151424.png">;
+                    <img src="Screenshot 2024-11-27 151433.png">;
+                    <img src="Screenshot 2024-11-27 151442.png">;
+                    <img src="Screenshot 2024-11-27 151449.png">;
+
+                    <p>Код html документу:
+                        <pre><code>&lt;/head&gt;
+                        &lt;body&gt;
+                            &lt;!-- Шапка --&gt;
+                            &lt;header&gt;
+                                &lt;h1&gt;Gulf Motors&lt;/h1&gt;
+                                &lt;p&gt;Автосервіс преміум-класу для вашого авто&lt;/p&gt;
+                            &lt;/header&gt;
+                        
+                            &lt;!-- Навігація --&gt;
+                            &lt;nav&gt;
+                                &lt;a href="#services"&gt;Наші послуги&lt;/a&gt;
+                                &lt;a href="#about"&gt;Про нас&lt;/a&gt;
+                                &lt;a href="#contact-form"&gt;Запис на обслуговування&lt;/a&gt;
+                                &lt;a href="#contact-info"&gt;Контакти&lt;/a&gt;
+                            &lt;/nav&gt;
+                        
+                            &lt;!-- Головна --&gt;
+                            &lt;main&gt;
+                                &lt;!-- Опис --&gt;
+                                &lt;section id="about"&gt;
+                                    &lt;h2&gt;Про Gulf Motors&lt;/h2&gt;
+                                    &lt;img src="Gulf Motors.jpg" alt="Фото Gulf Motors" id="about-image"&gt;
+                                    &lt;p&gt;
+                                        Gulf Motors — ваш надійний партнер у світі автообслуговування. Ми пропонуємо повний спектр послуг із технічного обслуговування, діагностики та ремонту автомобілів.
+                                        Завдяки нашій професійній команді та сучасному обладнанню, ми гарантуємо високу якість робіт, прозорі ціни та максимальний комфорт для клієнтів.
+                                    &lt;/p&gt;
+                        
+                                    &lt;!-- Карусель --&gt;
+                                    &lt;div id="carousel"&gt;
+                                        &lt;div&gt;
+                                            &lt;img src="GULF Service.jpg" alt="Фото 1"&gt;
+                                            &lt;img src="GULF Service 2.jpg" alt="Фото 2"&gt;
+                                            &lt;img src="GULF Service 3.jpg" alt="Фото 3"&gt;
+                                            &lt;img src="GULF Service 4.jpg" alt="Фото 4"&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/section&gt;
+                        
+                                &lt;!-- Таблиця --&gt;
+                                &lt;section id="services"&gt;
+                                    &lt;h2&gt;Наші послуги&lt;/h2&gt;
+                                    &lt;table&gt;
+                                        &lt;tr&gt;
+                                            &lt;th&gt;Послуга&lt;/th&gt;
+                                            &lt;th&gt;Ціна (грн)&lt;/th&gt;
+                                            &lt;th&gt;Опис&lt;/th&gt;
+                                        &lt;/tr&gt;
+                                        &lt;tr&gt;
+                                            &lt;td&gt;Діагностика&lt;/td&gt;
+                                            &lt;td&gt;1200&lt;/td&gt;
+                                            &lt;td&gt;Повна діагностика авто за допомогою сучасного обладнання.&lt;/td&gt;
+                                        &lt;/tr&gt;
+                                        &lt;tr&gt;
+                                            &lt;td&gt;Заміна масла&lt;/td&gt;
+                                            &lt;td&gt;500&lt;/td&gt;
+                                            &lt;td&gt;Швидка і якісна заміна масла.&lt;/td&gt;
+                                        &lt;/tr&gt;
+                                        &lt;tr&gt;
+                                            &lt;td&gt;Ремонт двигуна&lt;/td&gt;
+                                            &lt;td&gt;від 2000&lt;/td&gt;
+                                            &lt;td&gt;Ремонт двигунів будь-якої складності.&lt;/td&gt;
+                                        &lt;/tr&gt;
+                                    &lt;/table&gt;
+                                &lt;/section&gt;
+                        
+                                &lt;!-- Форма --&gt;
+                                &lt;section id="contact-form"&gt;
+                                    &lt;h2&gt;Запис на обслуговування&lt;/h2&gt;
+                                    &lt;form action="/submit" method="post"&gt;
+                                        &lt;label for="name"&gt;Ваше ім'я:&lt;/label&gt;
+                                        &lt;input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required&gt;
+                        
+                                        &lt;label for="phone"&gt;Номер телефону:&lt;/label&gt;
+                                        &lt;input type="tel" id="phone" name="phone" placeholder="+380123456789" required&gt;
+                        
+                                        &lt;label for="service"&gt;Оберіть послугу:&lt;/label&gt;
+                                        &lt;select id="service" name="service"&gt;
+                                            &lt;option value="diagnostic"&gt;Діагностика&lt;/option&gt;
+                                            &lt;option value="oil_change"&gt;Заміна масла&lt;/option&gt;
+                                            &lt;option value="engine_repair"&gt;Ремонт двигуна&lt;/option&gt;
+                                        &lt;/select&gt;
+                        
+                                        &lt;button type="submit"&gt;Записатися&lt;/button&gt;
+                                    &lt;/form&gt;
+                                &lt;/section&gt;
+                        
+                                &lt;!-- Контактна інформація --&gt;
+                                &lt;section id="contact-info"&gt;
+                                    &lt;h3&gt;Контакти&lt;/h3&gt;
+                                    &lt;p&gt;Телефон: 0505671718&lt;/p&gt;
+                                    &lt;p&gt;Телефон: 0939729660&lt;/p&gt;
+                                &lt;/section&gt;
+                        
+                                &lt;!-- Адреса --&gt;
+                                &lt;section id="address"&gt;
+                                    &lt;h3&gt;Наша адреса&lt;/h3&gt;
+                                    &lt;p&gt;М. Київ, Проспект Лобановського 5ж&lt;/p&gt;
+                                &lt;/section&gt;
+                            &lt;/main&gt;
+                        </code></pre>
+                    </p>
+                    <p>Код CSS:
+                    <pre><code> /* Основні стилі */
+                        body {
+                            font-family: 'Arial', sans-serif;
+                            margin: 0;
+                            padding: 0;
+                            background-color: #ffe4b5;
+                            color: #333;
+                            line-height: 1.6;
+                        }
+                
+                        /* Шапка */
+                        header {
+                            background-color: #000;
+                            color: #ffa500;
+                            text-align: center;
+                            padding: 1.5rem 1rem;
+                        }
+                
+                        header h1 {
+                            margin: 0;
+                            font-size: 2.8rem;
+                        }
+                
+                        header p {
+                            font-size: 1.2rem;
+                            margin: 0.5rem 0 0;
+                        }
+                
+                        /* Навігаційне меню */
+                        nav {
+                            background-color: #333;
+                            padding: 0.5rem;
+                            text-align: center;
+                            position: sticky;
+                            top: 0;
+                            z-index: 1000;
+                        }
+                
+                        nav a {
+                            color: #ffa500;
+                            text-decoration: none;
+                            margin: 0 1rem;
+                            font-size: 1.2rem;
+                            padding: 0.5rem 1rem;
+                            border-radius: 5px;
+                            transition: background-color 0.3s ease;
+                        }
+                
+                        nav a:hover {
+                            background-color: #ffa500;
+                            color: #000;
+                        }
+                
+                        main {
+                            padding: 2rem;
+                            max-width: 1200px;
+                            margin: 0 auto;
+                        }
+                
+                        h2 {
+                            text-align: center;
+                            color: #000;
+                        }
+                
+                        section {
+                            margin-bottom: 2rem;
+                            padding: 1.5rem;
+                            background-color: #fff;
+                            border-radius: 10px;
+                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                        }
+                
+                        /* Таблиця послуг */
+                        table {
+                            width: 100%;
+                            border-collapse: collapse;
+                            margin: 1rem 0;
+                        }
+                
+                        table th, table td {
+                            border: 1px solid #ddd;
+                            padding: 0.8rem;
+                            text-align: center;
+                        }
+                
+                        table th {
+                            background-color: #ffa500;
+                            color: #000;
+                            font-weight: bold;
+                        }
+                
+                        table tr:nth-child(even) {
+                            background-color: #f9f9f9;
+                        }
+                
+                        table tr:hover {
+                            background-color: #f1f1f1;
+                        }
+                
+                        /* Форма запису */
+                        #contact-form form {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                        }
+                
+                        #contact-form label {
+                            margin: 1rem 0 0.5rem;
+                            font-size: 1.1rem;
+                        }
+                
+                        #contact-form input, 
+                        #contact-form select, 
+                        #contact-form button {
+                            width: 80%;
+                            max-width: 400px;
+                            padding: 0.8rem;
+                            margin-bottom: 1rem;
+                            border: 2px solid #ffa500;
+                            border-radius: 5px;
+                            font-size: 1rem;
+                        }
+                
+                        #contact-form input:focus, 
+                        #contact-form select:focus {
+                            border-color: #333;
+                            outline: none;
+                        }
+                
+                        #contact-form button {
+                            background-color: #ffa500;
+                            color: #fff;
+                            font-weight: bold;
+                            cursor: pointer;
+                            transition: background-color 0.3s ease;
+                        }
+                
+                        #contact-form button:hover {
+                            background-color: #333;
+                            color: #ffa500;
+                        }
+                
+                        /* Контактна інформація */
+                        #contact-info {
+                            text-align: center;
+                            background-color: #fff;
+                            padding: 1rem;
+                            border-radius: 10px;
+                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                        }
+                
+                        #contact-info h3 {
+                            color: #000;
+                        }
+                
+                        #contact-info p {
+                            font-size: 1.2rem;
+                            color: #555;
+                        }
+                
+                        /* Карусель */
+                        #carousel {
+                            display: flex;
+                            overflow: hidden;
+                            max-width: 100%;
+                            border-radius: 10px;
+                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                            margin-top: 1rem;
+                        }
+                
+                        #carousel div {
+                            display: flex;
+                            transition: transform 0.5s ease;
+                        }
+                
+                        #carousel img {
+                            width: 100%;
+                            max-width: 300px;
+                        }
+                
+                        /* Блок з адресою */
+                        #address {
+                            text-align: center;
+                            background-color: #333;
+                            color: #ffa500;
+                            padding: 1.5rem;
+                            border-radius: 10px;
+                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                            margin-top: 2rem;
+                        }
+                
+                        #address h3 {
+                            font-size: 1.8rem;
+                            margin-bottom: 1rem;
+                        }
+                
+                        #address p {
+                            font-size: 1.2rem;
+                        }
+                
+                        /* Стилі для зображення */
+                        #about-image {
+                            display: block;
+                            margin: 1.5rem auto;
+                            width: 50%;
+                            max-width: 300px;
+                            height: auto;
+                            border-radius: 15px; /* Заокруглені кути */
+                        }
+                    </code></pre>
+                </p>
+            
             </div>
+            <div id="task2" class="lab2-section content-section text-content">
+                <p>Завдання 2.Варіант 2.Засобами HTML та CSS виконати Завдання №2, в саме: створити окремі веб-сторінки, а саме:
+                    • Розмітку за допомогою таблиці (номер варіанта – остання цифра у списку групи)
+                    o Фіксована таблична верстка
+                    o Гумова таблична верстка
+                    • Розмітку за допомогою блоків (плаваючих елементів) (номер варіанта – остання цифра у списку групи + 1)
+                    o Фіксована блокова верстка
+                    o Гумова блокова верстка
+                </p>
+            </div>
+            <div id="fixedTableLayout" class="lab2-section content-section text-content">
+                <h3>1.1 Фіксована таблична верстка</h3>
+                <pre>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html lang="uk"&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                        &lt;title&gt;Фіксована таблична верстка&lt;/title&gt;
+                        &lt;style&gt;
+                            table {
+                                width: 600px; /* Фіксована ширина */
+                                margin: 0 auto;
+                                border-collapse: collapse;
+                            }
+                            th, td {
+                                border: 1px solid #be2a2a;
+                                padding: 10px;
+                                text-align: center;
+                            }
+                            th {
+                                background-color: #dbd3d3;
+                            }
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;h1&gt;Таблиця з фіксованою шириною&lt;/h1&gt;
+                        &lt;table&gt;
+                            &lt;tr&gt;
+                                &lt;th&gt;№&lt;/th&gt;
+                                &lt;th&gt;Назва&lt;/th&gt;
+                                &lt;th&gt;Ціна&lt;/th&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;1&lt;/td&gt;
+                                &lt;td&gt;Товар&lt;/td&gt;
+                                &lt;td&gt;55 грн&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;2&lt;/td&gt;
+                                &lt;td&gt;Товар&lt;/td&gt;
+                                &lt;td&gt;78 грн&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;3&lt;/td&gt;
+                                &lt;td&gt;Товар&lt;/td&gt;
+                                &lt;td&gt;15 грн&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;4&lt;/td&gt;
+                                &lt;td&gt;Товар&lt;/td&gt;
+                                &lt;td&gt;65 грн&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/table&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                    
+        </pre>
+    </div>
+    <div id="fluidTableLayout" class="lab2-section content-section text-content">
+        <h3>1.2 Гумова таблична верстка</h3>
+        <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="uk"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;title&gt;Гумова таблична верстка&lt;/title&gt;
+                &lt;style&gt;
+                    table {
+                        width: 70%; /* Ширина таблиці автоматично пристосовується до екрану */
+                        border-collapse: collapse;
+                    }
+                    th, td {
+                        border: 1px solid #2da81f;
+                        padding: 10px;
+                        text-align: center;
+                    }
+                    th {
+                        background-color: #b01a1a;
+                    }
+                &lt;/style&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;h1&gt;Гумова таблична верстка&lt;/h1&gt;
+                &lt;table&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;№&lt;/th&gt;
+                        &lt;th&gt;Назва&lt;/th&gt;
+                        &lt;th&gt;Ціна&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;1&lt;/td&gt;
+                        &lt;td&gt;Товар&lt;/td&gt;
+                        &lt;td&gt;55 грн&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;2&lt;/td&gt;
+                        &lt;td&gt;Товар&lt;/td&gt;
+                        &lt;td&gt;78 грн&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;3&lt;/td&gt;
+                        &lt;td&gt;Товар&lt;/td&gt;
+                        &lt;td&gt;15 грн&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;4&lt;/td&gt;
+                        &lt;td&gt;Товар&lt;/td&gt;
+                        &lt;td&gt;65 грн&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+            
+        </pre>
+    </div>
+    <div id="fixedBlockLayout" class="lab2-section content-section text-content">
+        <h3>2.1 Фіксована блокова верстка</h3>
+        <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="uk"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;title&gt;Фіксована блокова верстка&lt;/title&gt;
+                &lt;style&gt;
+                    .container {
+                        width: 600px; /* Фіксована ширина */
+                        margin: 0 auto;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    .box {
+                        width: 20%;
+                        height: 200px;
+                        background-color: #6b2ba2;
+                        text-align: center;
+                        padding: 20px;
+                        box-sizing: border-box;
+                    }
+                &lt;/style&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;h1&gt;Фіксовані блоки&lt;/h1&gt;
+                &lt;div class="container"&gt;
+                    &lt;div class="box"&gt;Блок 1&lt;/div&gt;
+                    &lt;div class="box"&gt;Блок 2&lt;/div&gt;
+                    &lt;div class="box"&gt;Блок 3&lt;/div&gt;
+                    &lt;div class="box"&gt;Блок 4&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+            
+                        </pre>
+    </div>
+    <div id="fluidBlockLayout" class="lab2-section content-section text-content">
+        <h3>2.2 Гумова блокова верстка</h3>
+        <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="uk"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;title&gt;Гумова блокова верстка&lt;/title&gt;
+                &lt;style&gt;
+                    .container {
+                        width: 70%; /* Ширина контейнера адаптується до екрану */
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                    }
+                    .box {
+                        width: 20%;
+                        height: 200px;
+                        background-color: #107a90;
+                        text-align: center;
+                        padding: 20px;
+                        box-sizing: border-box;
+                        margin-bottom: 20px;
+                    }
+                &lt;/style&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;h1&gt;Гумові блоки&lt;/h1&gt;
+                &lt;div class="container"&gt;
+                    &lt;div class="box"&gt;Блок 1&lt;/div&gt;
+                    &lt;div class="box"&gt;Блок 2&lt;/div&gt;
+                    &lt;div class="box"&gt;Блок 3&lt;/div&gt;
+                    &lt;div class="box"&gt;Блок 4&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+            
+                        </pre>
+                    </div>
+                    <div id="mytask2" class="lab2-section content-section text-content">
+                        <h3>Завдання 2. Варіант 3</h3>
+                        <pre><code>&lt;!DOCTYPE html&gt;
+                            &lt;html lang="uk"&gt;
+                            
+                            &lt;head&gt;
+                                &lt;meta charset="UTF-8"&gt;
+                                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                                &lt;title&gt;Макет: Варіант 2&lt;/title&gt;
+                                &lt;style&gt;
+                                    body {
+                                        margin: 0;
+                                        font-family: Arial, sans-serif;
+                                    }
+                            
+                                    .container {
+                                        width: 100%;
+                                        max-width: 1200px;
+                                        margin: 0 auto;
+                                        overflow: hidden; /* Забезпечує коректне відображення плаваючих блоків */
+                                    }
+                            
+                                    /* Верхній блок */
+                                    .header {
+                                        background-color: #ffc107; /* Жовтий фон */
+                                        height: 100px;
+                                        line-height: 100px; /* Вертикальне вирівнювання тексту */
+                                        text-align: center; /* Центрування тексту */
+                                        font-size: 24px;
+                                        font-weight: bold;
+                                    }
+                            
+                                    /* Ліва панель */
+                                    .left-sidebar {
+                                        background-color: #007bff; /* Синій фон */
+                                        width: 20%; /* Ширина 20% від контейнера */
+                                        float: left; /* Використання float для розташування */
+                                        height: 400px;
+                                        color: white;
+                                        text-align: center;
+                                        padding-top: 20px; /* Відступ зверху для тексту */
+                                    }
+                            
+                                    /* Центральний блок */
+                                    .main-content {
+                                        background-color: #ffffff; /* Білий фон */
+                                        width: 40%; /* Ширина 40% від контейнера */
+                                        float: left; /* Використання float для розташування */
+                                        height: auto; /* Висота залежить від вмісту */
+                                        border: 1px solid #ddd; /* Сіра рамка */
+                                        box-sizing: border-box;
+                                        padding: 20px;
+                                        position: relative;
+                                    }
+                            
+                                    /* Права панель */
+                                    .right-sidebar {
+                                        background-color: #007bff; /* Синій фон */
+                                        width: 20%; /* Ширина 20% від контейнера */
+                                        float: left; /* Використання float для розташування */
+                                        height: 400px;
+                                        color: white;
+                                        text-align: center;
+                                        padding-top: 20px; /* Відступ зверху для тексту */
+                                    }
+                            
+                                    /* Нижній блок */
+                                    .footer {
+                                        background-color: #ffc107; /* Жовтий фон */
+                                        height: 100px;
+                                        clear: both; /* Забезпечує, що цей блок відображається під усіма float */
+                                        text-align: center; /* Центрування тексту */
+                                        line-height: 100px;
+                                        font-size: 20px;
+                                        font-weight: bold;
+                                    }
+                            
+                                    /* Червоний блок у Центрі */
+                                    .top-bar {
+                                        background-color: #dc3545; /* Червоний фон */
+                                        height: 50px;
+                                        width: 90%; /* Займає 90% ширини центрального блоку */
+                                        margin: 0 auto;
+                                        text-align: center; /* Центрування тексту */
+                                        color: white;
+                                        line-height: 50px;
+                                        margin-bottom: 20px; /* Відступ знизу */
+                                    }
+                            
+                                    /* Червоний блок під центральним контентом */
+                                    .bottom-bar {
+                                        background-color: #dc3545; /* Червоний фон */
+                                        height: 50px;
+                                        width: 90%; /* Займає 90% ширини центрального блоку */
+                                        margin: 20px ; /* Відступ знизу */
+                                        text-align: center; /* Центрування тексту */
+                                        color: white;
+                                        line-height: 50px;
+                                    }
+                                &lt;/style&gt;
+                            &lt;/head&gt;
+                            
+                            &lt;body&gt;
+                                &lt;div class="container"&gt;
+                                    &lt;!-- Верхній блок --&gt;
+                                    &lt;div class="header"&gt;1. Верхній блок: заголовок сторінки&lt;/div&gt;
+                            
+                                    &lt;!-- Ліва панель --&gt;
+                                    &lt;div class="left-sidebar"&gt;2. Ліва панель: додаткове меню&lt;/div&gt;
+                            
+                                    &lt;!-- Центральний блок --&gt;
+                                    &lt;div class="main-content"&gt;
+                                        &lt;div class="top-bar"&gt;Червоний блок: важлива інформація&lt;/div&gt;
+                                        3. Центральний блок: основний контент сторінки
+                                       
+                                        &lt;div class="bottom-bar"&gt;Червоний блок внизу&lt;/div&gt;
+                                    &lt;/div&gt;
+                            
+                                    &lt;!-- Права панель --&gt;
+                                    &lt;div class="right-sidebar"&gt;4. Права панель: додаткові функції&lt;/div&gt;
+                            
+                                    &lt;!-- Нижній блок --&gt;
+                                    &lt;div class="footer"&gt;5. Нижній блок: підвал сторінки&lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/body&gt;
+                            
+                            &lt;/html&gt;
+                        </code></pre>
+                        <h1>Підсумки</h1>
+
+<!-- Порівняльна таблиця -->
+<h2>Зіставлення таблиць та блоків</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Параметр</th>
+            <th>Таблиці</th>
+            <th>Плаваючі блоки</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><b>Гнучкість макету</b></td>
+            <td>Обмежена, важко налаштувати під різні розміри екранів</td>
+            <td>Висока, дозволяє створювати адаптивні макети</td>
+        </tr>
+        <tr>
+            <td><b>Простота реалізації</b></td>
+            <td>Легко створювати структури таблиць</td>
+            <td>Вимагає більше налаштувань та CSS</td>
+        </tr>
+        <tr>
+            <td><b>Сумісність</b></td>
+            <td>Широко підтримується усіма браузерами</td>
+            <td>Підтримується, але може потребувати додаткових налаштувань для старих браузерів</td>
+        </tr>
+        <tr>
+            <td><b>Застосування</b></td>
+            <td>Підходить для відображення табличних даних</td>
+            <td>Підходить для створення сучасних інтерфейсів</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Плаваючі блоки -->
+<div class="conclusion-section">
+    <div class="block-container">
+        <h3>Переваги таблиць</h3>
+        <ul>
+            <li>Легкість у використанні для табличних даних</li>
+            <li>Ясна структура та форматування</li>
+            <li>Широка підтримка у всіх браузерах</li>
+        </ul>
+    </div>
+    <div class="block-container">
+        <h3>Переваги блоків</h3>
+        <ul>
+            <li>Гнучкість у створенні дизайнів</li>
+            <li>Адаптація до різних пристроїв</li>
+            <li>Сучасний підхід у веб-розробці</li>
+        </ul>
+    </div>
+</div>
+</div>
+<div id="task3Flexbox" class="lab2-section content-section text-content">
+    <p>Завдання 3. Варіант 2. 8. Виконати Завдання №3, використовуючи засоби CSS та FLEXBOX</p>
+</div>
+<div id="flexboxScreenshot" class="lab2-section content-section text-content">
+    <img src="Screenshot 2024-11-27 211615.png" alt="Скріншот сторінки" class="screen-img">
+    <img src="Screenshot 2024-11-27 211748.png" alt="Скріншот сторінки" class="screen-img">
+    <img src="Screenshot 2024-11-27 211837.png" alt="Скріншот сторінки" class="screen-img">
+</div>
+<div id="flexboxHTMLCode" class="lab2-section content-section text-content">
+    <pre><code>
+        &lt;!DOCTYPE html&gt;
+&lt;html lang="uk"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Професія Java-розробник&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;!-- Header --&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Професія Java-розробник&lt;/h1&gt;
+    &lt;div class="features"&gt;
+      &lt;div&gt;Портфоліо для старту кар'єри&lt;/div&gt;
+      &lt;div&gt;Навчання на реальних кейсах&lt;/div&gt;
+      &lt;div&gt;Заробіток після 4 місяців навчання&lt;/div&gt;
+      &lt;div&gt;Можна працювати віддалено&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+
+  &lt;!-- Learning Process --&gt;
+  &lt;section class="learning-process"&gt;
+    &lt;h2&gt;Як проходить навчання&lt;/h2&gt;
+    &lt;div class="process-steps"&gt;
+      &lt;div class="step"&gt;
+        &lt;h3&gt;1&lt;/h3&gt;
+        &lt;p&gt;Дивіться відеолекції&lt;/p&gt;
+        &lt;img src="Screenshot 2024-11-27 204408.jpg" width="200" height="130"&gt;
+      &lt;/div&gt;
+      &lt;div class="step"&gt;
+        &lt;h3&gt;2&lt;/h3&gt;
+        &lt;p&gt;Робите завдання і відправляєте на перевірку&lt;/p&gt;
+        &lt;img src="Screenshot 2024-11-27 205219.jpg" width="200" height="130"&gt;
+      &lt;/div&gt;
+      &lt;div class="step"&gt;
+        &lt;h3&gt;3&lt;/h3&gt;
+        &lt;p&gt;Отримуєте розбір вашої роботи&lt;/p&gt;
+        &lt;img src="Screenshot 2024-11-27 205410.jpg" width="200" height="130"&gt;
+      &lt;/div&gt;
+      &lt;div class="step"&gt;
+        &lt;h3&gt;4&lt;/h3&gt;
+        &lt;p&gt;Працюєте над помилками&lt;/p&gt;
+        &lt;img src="Screenshot 2024-11-27 205601.jpg" width="200" height="130"&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;!-- Levels Section --&gt;
+  &lt;section class="levels"&gt;
+    &lt;h2&gt;Рівні навчання&lt;/h2&gt;
+    &lt;div class="level"&gt;
+      &lt;img src="Screenshot 2024-11-27 210521.jpg" width="200" height="200"&gt;
+      &lt;div class="content"&gt;
+        &lt;h3&gt;Перший рівень: чітка і зрозуміла теорія&lt;/h3&gt;
+        &lt;p&gt;За 4 місяці ви вивчите основи, створите проект і дізнаєтеся, як працювати з інтерфейсами.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="level"&gt;
+      &lt;img src="Screenshot 2024-11-27 211001.jpg" width="200" height="200"&gt;
+      &lt;div class="content"&gt;
+        &lt;h3&gt;Другий рівень: інтенсивна практика&lt;/h3&gt;
+        &lt;p&gt;Вирішуйте реальні завдання, створюйте проекти та отримуйте досвід роботи з реальними кейсами.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;!-- Footer --&gt;
+  &lt;footer&gt;
+    &lt;p&gt;&amp;copy; 2023&lt;/p&gt;
+    &lt;div class="socials"&gt;
+      &lt;a href="#"&gt;Facebook&lt;/a&gt;
+      &lt;a href="#"&gt;Telegram&lt;/a&gt;
+      &lt;a href="#"&gt;Twitter&lt;/a&gt;
+      &lt;a href="#"&gt;YouTube&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+</div>
+<div id="flexboxCSSCode" class="lab2-section content-section text-content">
+    <pre><code>
+        
+            * {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+            }
+        
+            body {
+              font-family: Arial, sans-serif;
+              background-color: #fff;
+              color: #000;
+              line-height: 1.5;
+            }
+        
+            /* Header Section */
+            header {
+              background-color: #FEC107;
+              padding: 20px;
+              text-align: center;
+            }
+        
+            header h1 {
+              font-size: 40px;
+              font-weight: bold;
+              color: #000;
+            }
+        
+            header .features {
+              display: flex;
+              justify-content: center;
+              gap: 20px;
+              margin-top: 20px;
+            }
+        
+            header .features div {
+              font-size: 16px;
+              background: #fff;
+              padding: 10px 20px;
+              border-radius: 5px;
+              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+        
+            /* Learning Process Section */
+            section.learning-process {
+              padding: 40px 20px;
+              text-align: center;
+            }
+        
+            section.learning-process h2 {
+              font-size: 28px;
+              font-weight: bold;
+              margin-bottom: 20px;
+            }
+        
+            .process-steps {
+              display: flex;
+              justify-content: center;
+              gap: 20px;
+              flex-wrap: wrap;
+            }
+        
+            .process-steps .step {
+              width: 200px;
+              text-align: center;
+            }
+        
+            .process-steps .step h3 {
+              font-size: 24px;
+              color: #FEC107;
+              margin-bottom: 10px;
+            }
+        
+            .process-steps .step p {
+              font-size: 14px;
+              margin-bottom: 10px;
+            }
+        
+            .process-steps .step .photo-slot {
+              width: 100%;
+              height: 100px;
+              background-color: #e0e0e0;
+              border: 2px dashed #ccc;
+              border-radius: 5px;
+              margin-top: 10px;
+            }
+        
+            .process-steps .step .photo-slot:hover {
+              background-color: #d6d6d6;
+            }
+        
+            /* Levels Section */
+            section.levels {
+              background: #F9F9F9;
+              padding: 40px 20px;
+            }
+        
+            section.levels h2 {
+              font-size: 28px;
+              font-weight: bold;
+              margin-bottom: 20px;
+              text-align: center;
+            }
+        
+            .levels .level {
+              display: flex;
+              align-items: flex-start;
+              justify-content: center;
+              gap: 20px;
+              margin-bottom: 30px;
+              flex-wrap: wrap;
+            }
+        
+            .levels .level img {
+              width: 40%;
+              border-radius: 10px;
+              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+        
+            .levels .content {
+              max-width: 50%;
+            }
+        
+            .levels .content h3 {
+              font-size: 24px;
+              margin-bottom: 10px;
+            }
+        
+            .levels .content p {
+              font-size: 14px;
+              line-height: 1.5;
+            }
+        
+            /* Footer Section */
+            footer {
+              background-color: #000;
+              color: #fff;
+              padding: 20px;
+              text-align: center;
+            }
+        
+            footer p {
+              font-size: 14px;
+              margin-bottom: 10px;
+            }
+        
+            footer .socials {
+              display: flex;
+              justify-content: center;
+              gap: 20px;
+            }
+        
+            footer .socials a {
+              color: #FEC107;
+              text-decoration: none;
+              font-size: 14px;
+            }
+        
+            footer .socials a:hover {
+              text-decoration: underline;
+            }
+        </code></pre>
+    </div>
+    <div id="conclusions-2" class="lab2-section content-section text-content">
+        <h2>Підсумки</h2>
+        <p>
+            Створення цього вебсайту за допомогою <strong>HTML</strong> та <strong>CSS</strong> ілюструє основні
+            принципи та
+            техніки сучасної веб-розробки. Головною складовою є застосування
+            <em>семантичної розмітки HTML</em> для організації контенту та <em>адаптивного стилювання CSS</em>, що
+            дозволяє
+            розробити зручний, естетично привабливий і ефективний інтерфейс.
+        </p>
+        <ul>
+            <li>Застосування <strong>Flexbox</strong> для гнучкого розміщення елементів, що гарантує коректне
+                відображення на різних пристроях.</li>
+            <li>Інтеграція стильного дизайну з <strong>напівпрозорими елементами</strong>, що додають візуального об'єму.</li>
+            <li>Організація коду з урахуванням принципів <strong>DRY (Don't Repeat Yourself)</strong> для зручності
+                обслуговування та масштабування.</li>
+            <li>Розподіл стилів на загальні та специфічні для кожної частини сайту для поліпшення читабельності та повторного
+                використання.</li>
+            <li>Створення випадаючих меню для покращення навігації.</li>
+        </ul>
+        <p>Сайт відповідає основним принципам веб-розробки, серед яких <em>адаптивність</em>, <em>доступність</em>,
+            <em>зручність для користувачів</em>, і може слугувати основою для подальших удосконалень.
+        </p>
+        <h2>Контрольні питання</h2>
+        <h2>1. Три базові концепції верстки за допомогою CSS</h2>
+        <p><strong>Блоки (Box Model):</strong> Усі елементи веб-сторінки можна розглядати як блоки, що складаються з контенту, внутрішніх відступів (padding), рамок (border) і зовнішніх відступів (margin).</p>
+        <p><strong>Позиціонування (Positioning):</strong> Позиціонування визначає, де елемент має бути розташований на сторінці, за допомогою різних методів: static (за замовчуванням), relative, absolute, fixed, sticky.</p>
+        <p><strong>Флексбокси та гріди (Flexbox і Grid):</strong> Ці технології дозволяють створювати складні макети, використовуючи гнучкі контейнери і сітки для управління елементами на сторінці.</p>
+    
+        <h2>2. Фіксований тип макетів веб-сторінок</h2>
+        <p><strong>Визначення:</strong> Це тип макету, де елементи мають фіксовані розміри, і їх положення на сторінці не залежить від розміру вікна браузера чи пристрою.</p>
+        <p><strong>Переваги:</strong> Легко реалізувати, елементи завжди мають однаковий вигляд, не змінюються при зміні розміру вікна.</p>
+        <p><strong>Недоліки:</strong> Не підходить для мобільних пристроїв, оскільки не адаптується до різних розмірів екранів.</p>
+    
+        <h2>3. Гумовий тип макетів веб-сторінок</h2>
+        <p><strong>Визначення:</strong> Макет, де елементи використовують відсоткові значення для ширини чи висоти, що дозволяє їм змінюватися в залежності від розміру екрану.</p>
+        <p><strong>Переваги:</strong> Макет адаптується до різних екранів, зручний для використання на мобільних пристроях.</p>
+        <p><strong>Недоліки:</strong> Може бути складно передбачити точний вигляд елементів, особливо якщо контент має різну довжину.</p>
+    
+        <h2>4. Еластичний тип макетів веб-сторінок</h2>
+        <p><strong>Визначення:</strong> Це макет, де елементи використовують одиниці вимірювання типу em або rem, які змінюються залежно від розміру шрифтів.</p>
+        <p><strong>Переваги:</strong> Підлаштовується під зміни шрифтів та інших налаштувань користувача, забезпечуючи більшу гнучкість.</p>
+        <p><strong>Недоліки:</strong> Може бути важким у налаштуванні, особливо якщо потрібно досягти точності в макеті.</p>
+    
+        <h2>5. Адаптивний тип макетів веб-сторінок</h2>
+        <p><strong>Визначення:</strong> Макет, що змінює свою структуру залежно від розміру екрана за допомогою медіа-запитів.</p>
+        <p><strong>Переваги:</strong> Створює оптимальний вигляд на різних пристроях, зокрема на мобільних телефонах і планшетах.</p>
+        <p><strong>Недоліки:</strong> Потребує більше часу на налаштування та тестування для різних розмірів екранів.</p>
+    
+        <h2>6. Комбіновані типи макетів веб-сторінок</h2>
+        <p><strong>Визначення:</strong> Комбінація кількох типів макетів (фіксованих, гумових, еластичних та адаптивних), що дозволяє досягти більшої гнучкості та контролю.</p>
+        <p><strong>Переваги:</strong> Дозволяє використовувати різні підходи для різних частин сторінки, забезпечуючи гарний вигляд на різних пристроях.</p>
+        <p><strong>Недоліки:</strong> Складність у реалізації та обслуговуванні, може вимагати великої кількості тестування.</p>
+    
+        <h2>7. Як створити веб-сторінку за допомогою таблиці</h2>
+        <p>Щоб створити веб-сторінку за допомогою таблиць, ви можете використати HTML для визначення таблиці та її рядків і клітинок. Кожен рядок створюється за допомогою елементів <code>&lt;tr&gt;</code>, а кожна клітинка — за допомогою елементів <code>&lt;td&gt;</code>. CSS використовується для надання таблиці стилів, таких як ширина, висота, рамки та відступи. Цей підхід часто використовується для простих макетів.</p>
+    
+        <h2>8. Як створити веб-сторінку за допомогою плаваючих блоків</h2>
+        <p>Для створення макету за допомогою плаваючих блоків використовуються властивості CSS <code>float</code>. Кожен блок з плаваючим вмістом розміщується в залежності від інших елементів. Це дозволяє створювати сторінки, де елементи "плавають" один поряд з іншим, наприклад, текст може оточувати зображення чи інші елементи. Після того як елементи "плавають", часто використовують властивість <code>clear</code> для уникнення накладення елементів.</p>
+            
+                                        
+
             <div id="lab2_1" class="content-section">
                 <h3>Лабораторна робота 2.1</h3>
             </div>
