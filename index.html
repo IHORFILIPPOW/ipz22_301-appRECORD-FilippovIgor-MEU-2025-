@@ -24,7 +24,7 @@
         <button onclick="showLab('lab2')">Лабораторна робота 2</button>
         <button onclick="showLab('lab2_2')">Лабораторна робота 2.2</button>
         <button onclick="showLab('lab3')">Лабораторна робота 3</button>
-        <button onclick="showLab('lab3_1')">Лабораторна робота 3.1</button>
+        <button onclick="showLab('lab3_2')">Лабораторна робота 3.2</button>
         <button onclick="showLab('lab4')">Лабораторна робота 4.1</button>
         <button onclick="showLab('lab4_1')">Лабораторна робота 4.2</button>
         <button onclick="showLab('lab5')">Лабораторна робота 5.1</button>
@@ -2171,9 +2171,569 @@
 </div>
 
             
-            <div id="lab3" class="content-section">
-                <h3>Лабораторна робота 3</h3>
+           <!-- Лабораторна робота 3 -->
+           <div id="lab3" class="content-section">
+            <div class="sidebar">
+                <button onclick="showSection('goal3', 'lab3')">Тема, мета, місце розташування сайту та звіту</button>
+                <button onclick="showSection('task-1', 'lab3')">Завдання №1</button>
+                <button onclick="showSection('task-2', 'lab3')">Завдання №2</button>
+                <button onclick="showSection('task-3', 'lab3')">Завдання №3</button>
+                <button onclick="showSection('task-4', 'lab3')">Завдання №4</button>
+                <button onclick="showSection('task-5', 'lab3')">Завдання №5</button>
+                <button onclick="showSection('conclusions-3', 'lab3')">Висновки</button>
             </div>
+            <div id="goal3" class="lab3-section content-section text-content">
+                <p><strong>Тема:</strong>ФУНКЦІОНАЛЬНЕ ЗАСТОСУВАННЯ JAVASCRIPT У HTML-ДОКУМЕНТІ.
+                ВИКОРИСТАННЯ МАСИВІВ У JS-СЦЕНАРІЯХ. РЕАЛІЗАЦІЯ ПРОГРАМ ЗАСОВАМИ МОВИ JAVASCRIPT
+
+                </p><br />
+                <p><strong>Мета:</strong>придбати практичні навички роботи з конструкціями мови JS, масивами та фугкціями у js-сценаріях. Реалізація програм
+                засовами мови JAVASCRIPT<br />
+            
+                <a href="https://ihorfilippow.github.io/ipz22_301-appWEB-FilippovIgor--MEU-2025/" style="margin-right: 10px;">Посилання на живу веб-сторінку</a>
+                <a href="https://github.com/IHORFILIPPOW/ipz22_301-appWEB-FilippovIgor--MEU-2025" style="margin-right: 30px;">Посилання на веб-сторінку</a><br/>
+                
+                <a href="https://ihorfilippow.github.io/ipz22_301-appRECORD-FilippovIgor-MEU-2025-/" style="margin-right: 10px;">Посилання на живу сторінку звітного HTML документа</a>
+                <a href="https://github.com/IHORFILIPPOW/ipz22_301-appRECORD-FilippovIgor-MEU-2025-" style="margin-right: 30px;">Посилання на сторінку звітного HTML документа</a><br/>
+                
+                <a href="https://ihorfilippow.github.io/ipz22_301--app-INDEPENDENT--FilippovIgor-MEU-2025-/" style="margin-right: 10px;">Посилання на живу сторінку з самостійними роботами</a>
+                <a href="https://github.com/IHORFILIPPOW/ipz22_301--app-INDEPENDENT--FilippovIgor-MEU-2025- ">Посилання на сторінку з самостійними роботами</a><br />
+            </div> <div id="task-1" class="lab3-section content-section text-content">
+                <p>Завдання №1. Варіант 2</p>
+                <pre><code>
+                    &lt;script&gt;
+function getShippingMessage(country, price, deliveryFee) {
+    // Обчислення загальної вартості замовлення
+    const totalPrice = price + deliveryFee;
+
+    // Формування повідомлення
+    const message = `Shipping to ${country} will cost ${totalPrice} credits`;
+
+    // Виведення повідомлення у консоль
+    console.log(message);
+
+    // Повертаємо повідомлення (опціонально)
+    return message;
+}
+
+// Приклади використання
+getShippingMessage("Canada", 50, 10); // Виведе: "Shipping to Canada will cost 60 credits"
+getShippingMessage("Germany", 100, 20); // Виведе: "Shipping to Germany will cost 120 credits"
+&lt;/script&gt;
+
+                </code></pre>
+                <img src="1.png" alt="Скріншот консолі" class="screen-img">
+                
+            </div><div id="task-2" class="lab3-section content-section text-content">
+                <p>Завдання №2.Варіант 2</p>
+                <pre><code>
+                    &lt;script&gt;
+                    function makeTransaction(quantity, pricePerDroid, customerCredits) {
+                        // Обчислення загальної суми замовлення
+                        const totalPrice = quantity * pricePerDroid;
+                        
+                        // Перевірка, чи вистачить коштів на рахунку
+                        if (totalPrice &gt; customerCredits) {
+                          return "Insufficient funds!";
+                        } else {
+                          return `You ordered ${quantity} droids worth ${totalPrice} credits!`;
+                        }
+                    }
+                      
+                    // Приклад виклику функції та виведення результату в консоль
+                    console.log(makeTransaction(5, 300, 1500)); // Виведе: You ordered 5 droids worth 1500 credits!
+                    console.log(makeTransaction(3, 400, 1000)); // Виведе: Insufficient funds!
+                    &lt;/script&gt;
+                    
+                    </pre>
+                </code></pre>
+                <img src="2.png" alt="Скріншот консолі" class="screen-img">
+            </div> <div id="task-3" class="lab3-section content-section text-content">
+                <p>Завдання №3.Варіант 2</p>
+                <pre><code>
+                    &lt;script&gt;
+// Об'єднуємо обидва масиви
+const combinedArray = firstArray.concat(secondArray);
+
+// Якщо довжина об'єднаного масиву перевищує maxLength, повертаємо його копію з довжиною maxLength
+if (combinedArray.length &gt; maxLength) {
+  return combinedArray.slice(0, maxLength);
+}
+
+// Інакше повертаємо весь об'єднаний масив
+return combinedArray;
+}
+
+// Приклад виклику функції та виведення результату в консоль
+console.log(makeArray([1, 2, 3], [4, 5, 6], 5));  // Виведе: [1, 2, 3, 4, 5]
+console.log(makeArray([1, 2], [3, 4, 5], 10));    // Виведе: [1, 2, 3, 4, 5]
+&lt;/script&gt;
+
+                </code></pre>
+                <img src="3.png" alt="Скріншот консолі" class="screen-img">
+            </div><div id="task-4" class="lab3-section content-section text-content">
+                <p>Завдання №4(1,2).Варіант 2</p>
+                <p>Підпункт 1</p>
+                <pre><code>
+                    &lt;script&gt;
+const readline = require('readline');
+
+// Створюємо інтерфейс для зчитування вводу з терміналу
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+// Функція для отримання суми елементів з парними індексами
+function sumEvenIndices(arr) {
+    let sum = 0;
+    for (let i = 0; i &lt; arr.length; i++) {
+        if (i % 2 === 0) {
+            sum += arr[i];
+        }
+    }
+    return sum;
+}
+
+// Функція для знаходження максимального елемента та його індексу серед непарних індексів
+function maxOddIndices(arr) {
+    let max = -Infinity;
+    let index = -1;
+    for (let i = 1; i &lt; arr.length; i += 2) { // починаємо з індексу 1 для непарних
+        if (arr[i] &gt; max) {
+            max = arr[i];
+            index = i;
+        }
+    }
+    return { max, index };
+}
+
+// Функція для знаходження мінімального елемента та його індексу серед непарних індексів
+function minOddIndices(arr) {
+    let min = Infinity;
+    let index = -1;
+    for (let i = 1; i &lt; arr.length; i += 2) { // починаємо з індексу 1 для непарних
+        if (arr[i] &lt; min) {
+            min = arr[i];
+            index = i;
+        }
+    }
+    return { min, index };
+}
+
+// Отримуємо кількість елементів масиву від користувача через readline
+rl.question('Введіть кількість елементів масиву: ', (size) => {
+    size = parseInt(size); // Перетворюємо введене значення в число
+
+    // Створення масиву з випадковими числами
+    let arr = [];
+    for (let i = 0; i &lt; size; i++) {
+        arr.push(Math.floor(Math.random() * 100)); // Заповнення випадковими числами від 0 до 99
+    }
+
+    console.log("Масив:", arr);
+
+    // Використовуємо функції для обчислення результатів
+    let sum = sumEvenIndices(arr);
+    console.log("Сума елементів з парними індексами:", sum);
+
+    let maxOdd = maxOddIndices(arr);
+    console.log("Максимальний елемент серед непарних індексів:", maxOdd.max, "Індекс:", maxOdd.index);
+
+    let minOdd = minOddIndices(arr);
+    console.log("Мінімальний елемент серед непарних індексів:", minOdd.min, "Індекс:", minOdd.index);
+
+    // Закриваємо інтерфейс після завершення
+    rl.close();
+});
+&lt;/script&gt;
+
+                </code></pre>
+                <img src="4.1.png" alt="Скріншот консолі" class="screen-img">
+                <p>Підпункт 2</p>
+                <pre><code>
+                    &lt;script&gt;
+                    const readline = require('readline');
+                    
+                    // Створюємо інтерфейс для зчитування вводу з терміналу
+                    const rl = readline.createInterface({
+                      input: process.stdin,
+                      output: process.stdout
+                    });
+                    
+                    // Функція для сортування масиву у порядку зростання
+                    function sortArray(arr) {
+                        return arr.sort((a, b) => a - b); // Використовуємо метод sort() для сортування
+                    }
+                    
+                    // Функція для виведення масивів
+                    function printArrays(inputArr, outputArr) {
+                        console.log("Вхідний масив:", inputArr);
+                        console.log("Вихідний масив (упорядкований):", outputArr);
+                    }
+                    
+                    // Отримуємо кількість елементів масиву від користувача через readline
+                    rl.question('Введіть кількість елементів масиву: ', (size) => {
+                        size = parseInt(size); // Перетворюємо введене значення в число
+                    
+                        // Створення масиву з випадковими числами
+                        let arr = [];
+                        for (let i = 0; i &lt; size; i++) {
+                            arr.push(Math.floor(Math.random() * 100)); // Заповнення випадковими числами від 0 до 99
+                        }
+                    
+                        // Сортуємо масив у порядку зростання
+                        let sortedArr = sortArray(arr);
+                    
+                        // Виводимо вхідний та вихідний масиви
+                        printArrays(arr, sortedArr);
+                    
+                        // Закриваємо інтерфейс після завершення
+                        rl.close();
+                    });
+                    &lt;/script&gt;
+                    
+                </code></pre>
+                <img src="4.2.png" alt="Скріншот консолі" class="screen-img">
+            </div><div id="task-5" class="lab3-section content-section text-content">
+                <p> Завдання №5. Варіант 2</p>
+                <pre><code>
+                    &lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Багаторівневе меню&lt;/title&gt;
+    &lt;style&gt;
+        /* Стилі для меню */
+        #menu-container {
+            margin: 20px 0;
+            padding: 10px;
+        }
+
+        /* Горизонтальне меню */
+        .horizontal-menu {
+            list-style-type: none;
+            display: flex;
+            padding: 0;
+        }
+
+        .horizontal-menu li {
+            margin-right: 20px;
+            font-size: 18px;
+        }
+
+        .horizontal-menu a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .horizontal-menu a:hover {
+            color: #007bff;
+        }
+
+        /* Вертикальне меню */
+        .vertical-menu {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .vertical-menu li {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .vertical-menu a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .vertical-menu a:hover {
+            color: #007bff;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id="menu-container"&gt;&lt;/div&gt;
+
+    &lt;h1&gt;Головна сторінка&lt;/h1&gt;
+    &lt;p&gt;Тут можна додавати основний контент.&lt;/p&gt;
+
+    &lt;script&gt;
+        // Масив пунктів меню
+        const menuItems = [
+            { name: "Головна", link: "index.html" },
+            { name: "Про нас", link: "about.html" },
+            { name: "Послуги", link: "services.html" },
+            { name: "Контакти", link: "contacts.html" }
+        ];
+
+        // Функція для створення горизонтального меню
+        function createHorizontalMenu() {
+            const menuContainer = document.getElementById("menu-container");
+            const ul = document.createElement("ul");
+            ul.classList.add("horizontal-menu");
+
+            menuItems.forEach(item => {
+                const li = document.createElement("li");
+                const a = document.createElement("a");
+                a.href = item.link;
+                a.textContent = item.name;
+                li.appendChild(a);
+                ul.appendChild(li);
+            });
+
+            menuContainer.appendChild(ul);
+        }
+
+        // Функція для створення вертикального меню
+        function createVerticalMenu() {
+            const menuContainer = document.getElementById("menu-container");
+            const ul = document.createElement("ul");
+            ul.classList.add("vertical-menu");
+
+            menuItems.forEach(item => {
+                const li = document.createElement("li");
+                const a = document.createElement("a");
+                a.href = item.link;
+                a.textContent = item.name;
+                li.appendChild(a);
+                ul.appendChild(li);
+            });
+
+            menuContainer.appendChild(ul);
+        }
+
+        // Вибір меню: горизонтальне або вертикальне
+        createHorizontalMenu(); // Виклик для горизонтального меню
+        // createVerticalMenu(); // Щоб викликати вертикальне меню, треба замінити на цю лінію
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+                </code></pre>
+                <p>Приклад 1</p>
+                <img src="Приклад1.png" alt="Скріншот" class="screen-img">
+                <p>Приклад 2</p>
+                <img src="Приклад2.png" alt="Скріншот" class="screen-img">
+                <p>Приклад 3</p>
+                <img src="Приклад3.png" alt="Скріншот" class="screen-img">
+                <p>Приклад 4</p>
+                <img src="Приклад4.png" alt="Скріншот" class="screen-img">
+                <p>Приклад 5</p>
+                <img src="Приклад5.png" alt="Скріншот" class="screen-img">
+                <p>Приклад 6</p>
+                <img src="Приклад6.png" alt="Скріншот" class="screen-img">
+            </div><div id="conclusions-3" class="lab3-section content-section text-content">
+                <h2>Висновки</h2>
+                <p>Під час виконання лабораторної роботи були виконані кілька завдань для удосконалення навичок програмування на JavaScript та роботи з елементами HTML.</p> <p>Ця лабораторна робота сприяла покращенню навичок перевірки введених даних та взаємодії з користувачем через веб-сторінки.</p>
+
+            </div>
+        </div> <!-- Лабораторна робота 3_2 -->
+        <div id="lab3_2" class="content-section">
+            <div class="sidebar">
+                <button onclick="showSection('goal3_2', 'lab3_2')">Тема, мета, місце розташування сайту та звіту</button>
+                <button onclick="showSection('tasks-3_2', 'lab3_2')">Завдання №2,4,6,8,9,10</button>
+                <button onclick="showSection('conclusions-3_2', 'lab3_2')">Висновки</button>
+            </div>
+            <div id="goal3_2" class="lab3_2-section content-section text-content">
+                <p><strong>Тема:</strong>ОБ'ЄКТ. МЕТОДИ ОБ'ЄКТА. МАСИВ ОБ'ЄКТІВ. ДЕСТРУКТУРИЗАЦІЯ ОБ'ЄКТІВ. CALLBACK. СТРІЛОЧНІ ФУНКЦІЇ. СТРІЛОЧНІ ФУНКЦІЇ ЯК
+                КОЛБЕКИ.
+                </p><br />
+                <p><strong>Мета:</strong>придбати практичні навички роботи з об'єктами. Методи об'єкта.. Callback. Стрілочні функції. Стрілочні функції як
+                колбеки.Реалізація програм засовами мови JAVASCRIPT
+                <br />
+        
+                <a href="https://ihorfilippow.github.io/ipz22_301-appWEB-FilippovIgor--MEU-2025/" style="margin-right: 10px;">Посилання на живу веб-сторінку</a>
+                <a href="https://github.com/IHORFILIPPOW/ipz22_301-appWEB-FilippovIgor--MEU-2025" style="margin-right: 30px;">Посилання на веб-сторінку</a><br/>
+                
+                <a href="https://ihorfilippow.github.io/ipz22_301-appRECORD-FilippovIgor-MEU-2025-/" style="margin-right: 10px;">Посилання на живу сторінку звітного HTML документа</a>
+                <a href="https://github.com/IHORFILIPPOW/ipz22_301-appRECORD-FilippovIgor-MEU-2025-" style="margin-right: 30px;">Посилання на сторінку звітного HTML документа</a><br/>
+                
+                <a href="https://ihorfilippow.github.io/ipz22_301--app-INDEPENDENT--FilippovIgor-MEU-2025-/" style="margin-right: 10px;">Посилання на живу сторінку з самостійними роботами</a>
+                <a href="https://github.com/IHORFILIPPOW/ipz22_301--app-INDEPENDENT--FilippovIgor-MEU-2025- ">Посилання на сторінку з самостійними роботами</a><br />
+            </div><div id="tasks-3_2" class="lab3_2-section content-section text-content">
+                <h2>Завдання 2</h2>
+                <pre>
+                    &lt;function getProductDetails(productId, successCallback, errorCallback) {&gt;
+                        &lt;!-- Імітація отримання даних про товар (наприклад, запит до API) --&gt;
+                        const products = [
+                            { id: 1, name: 'Товар 1', price: 100 },
+                            { id: 2, name: 'Товар 2', price: 200 },
+                            { id: 3, name: 'Товар 3', price: 300 }
+                        ];
+                    
+                        &lt;!-- Шукаємо товар за вказаним productId --&gt;
+                        const product = products.find(item => item.id === productId);
+                    
+                        &lt;!-- Якщо товар знайдений, викликаємо successCallback з даними товару --&gt;
+                        if (product) {
+                            successCallback(product);
+                        } else {
+                            &lt;!-- Якщо товар не знайдений, викликаємо errorCallback з повідомленням про помилку --&gt;
+                            errorCallback('Товар не знайдений');
+                        }
+                    }
+                    
+                    &lt;!-- Приклад використання функції: --&gt;
+                    getProductDetails(2, 
+                        (product) =&gt; {
+                            console.log('Товар знайдений:', product);
+                        },
+                        (error) =&gt; {
+                            console.error(error);
+                        }
+                    );
+                    
+                </pre> <h2>Завдання 4</h2>
+                <pre>
+                    &lt;const concerts = {&gt;
+                        Київ: new Date("2020-04-01"),
+                        Умань: new Date("2025-07-02"),
+                        Вінниця: new Date("2020-04-21"),
+                        Одеса: new Date("2025-03-15"),
+                        Хмельницький: new Date("2020-04-18"),
+                        Харків: new Date("2025-07-10"),
+                    };
+                    
+                    &lt;const currentDate = new Date();&gt;
+                    
+                    &lt;const upcomingCities = Object.entries(concerts)&gt;
+                        .filter(([city, date]) =&gt; date > currentDate)  &lt;!-- фільтруємо майбутні концерти --&gt;
+                        .sort((a, b) =&gt; a[1] - b[1])  &lt;!-- сортуємо за датою концерту --&gt;
+                        .map(([city]) =&gt; city);  &lt;!-- беремо тільки міста --&gt;
+                    
+                    &lt;console.log(upcomingCities);&gt;  &lt;!-- Вивести результат --&gt;
+                    
+                </pre><h2>Завдання 6</h2>
+                <pre>
+                    &lt;function applyDiscount(medicines) {&gt;
+                        return medicines.map((medicine, index) =&gt; {
+                          let discountedPrice = medicine.price &gt; 300 ? medicine.price * 0.7 : medicine.price;
+                          return {
+                            id: index + 1,  &lt;!-- додавання унікального ID --&gt;
+                            name: medicine.name,
+                            price: discountedPrice
+                          };
+                        });
+                      }
+                    
+                      &lt;const medicines = [&gt;
+                        { name: "Noshpa", price: 170 },
+                        { name: "Analgin", price: 55 },
+                        { name: "Quanil", price: 310 },
+                        { name: "Alphacholine", price: 390 },
+                      ];
+                    
+                      &lt;const updatedMedicines = applyDiscount(medicines);&gt;
+                      &lt;console.log(updatedMedicines);&gt;
+                    
+                </pre> <h2>Завдання 8</h2>
+                <pre>
+                    &lt; // Властивість для зберігання товарів &gt;
+                    this.items = initialItems;
+                  
+                    &lt; // Метод для отримання всіх товарів &gt;
+                    this.getItems = function() {
+                      return this.items;
+                    };
+                  
+                    &lt; // Метод для додавання нового товару &gt;
+                    this.addItems = function(item) {
+                      this.items.push(item);
+                    };
+                  
+                    &lt; // Метод для видалення товару &gt;
+                    this.removeItem = function(item) {
+                      const index = this.items.indexOf(item);
+                      if (index !== -1) {
+                        this.items.splice(index, 1);
+                      }
+                    };
+                  }
+                  
+                  &lt; // Приклад використання: &gt;
+                  const arr = ["apple", "banana", "mango"];
+                  const storage = new Storage(arr);
+                  
+                  &lt; // Отримання товарів &gt;
+                  console.log(storage.getItems()); &lt; // ["apple", "banana", "mango"] &gt;
+                  
+                  &lt; // Додавання товару &gt;
+                  storage.addItems("orange");
+                  console.log(storage.getItems()); &lt; // ["apple", "banana", "mango", "orange"] &gt;
+                  
+                  &lt; // Видалення товару &gt;
+                  storage.removeItem("banana");
+                  console.log(storage.getItems()); &lt; // ["apple", "mango", "orange"] &gt;
+                
+                </pre><h2>Завдання 9</h2>
+                <pre>
+                    &lt; const tweets = [ &gt;
+                    { id: "000", likes: 5, tags: ["js", "nodejs"] },
+                    { id: "001", likes: 2, tags: ["html", "css"] },
+                    { id: "002", likes: 17, tags: ["html", "js", "nodejs"] },
+                    { id: "003", likes: 8, tags: ["css", "react"] },
+                    { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
+                  ];
+                  
+                  &lt; // Використовуємо reduce для обчислення кількості кожного тегу &gt;
+                  const tagCounts = tweets.reduce((acc, tweet) => {
+                    &lt; // Проходимо кожним тегом з масиву tags в кожному твітті &gt;
+                    tweet.tags.forEach(tag => {
+                      &lt; // Якщо тег вже є в об'єкті acc, збільшуємо його значення на 1 &gt;
+                      &lt; // Якщо тег ще не був доданий, ініціалізуємо його значення як 1 &gt;
+                      acc[tag] = (acc[tag] || 0) + 1;
+                    });
+                    &lt; // Повертаємо acc для наступного кроку редагування &gt;
+                    return acc;
+                  }, {});
+                  
+                  console.log(tagCounts); &lt; // Виводимо результат &gt;
+                
+                </pre>
+                
+                <h2>Завдання 10</h2>
+                <pre>
+                    &lt; // Перевірка правильності закриття дужок у рядку &gt;
+function checkBrackets(str) {
+    const stack = [];
+    const brackets = {
+        "(": ")",
+        "{": "}",
+        "[": "]",
+    };
+
+    for (const char of str) {
+        if (brackets[char]) {
+            stack.push(char); &lt; // Відкриваюча дужка додається в стек &gt;
+        } else if (Object.values(brackets).includes(char)) {
+            const last = stack.pop(); &lt; // Порівнюємо зі стеком &gt;
+            if (brackets[last] !== char) return false; &lt; // Помилка, якщо дужки не збігаються &gt;
+        }
+    }
+
+    return stack.length === 0; &lt; // Перевіряємо, чи всі дужки закриті &gt;
+}
+
+&lt; // Приклад використання: &gt;
+console.log(checkBrackets("someFn({})")); &lt; // true &gt;
+console.log(checkBrackets("someFn({[)]}")); &lt; // false &gt;
+
+                    
+                </pre>
+            </div><div id="conclusions-3_2" class="lab3_2-section content-section text-content">
+                <h2>Висновки з лабораторної роботи</h2>
+                <p>1. <strong>Робота з функціями та колбеками:</strong> Під час виконання завдання було освоєно використання функцій з колбеками. Це дозволяє створювати більш гнучкі програми, де одна функція може передавати результати іншій для подальшої обробки.</p>
+                
+                <p>2. <strong>Маніпулювання об'єктами та масивами:</strong> Завдання допомогло покращити навички роботи з об'єктами та масивами, зокрема, за допомогою таких методів як <code>map</code>, <code>filter</code>, <code>reduce</code> і <code>sort</code>, які є важливими для обробки і трансформації даних у JavaScript.</p>
+                
+                <p>3. <strong>Приватні властивості в класах:</strong> Ознайомлення з приватними властивостями в класах через символ <code>#</code> дозволило глибше зрозуміти концепцію інкапсуляції в ООП. Приватні властивості допомагають контролювати доступ до даних, що підвищує безпеку та підтримку коду.</p>
+                
+                <p>4. <strong>Робота з датами:</strong> Завдання, пов'язане з медичними препаратами та їх термінами придатності, підкреслило важливість використання об'єктів типу <code>Date</code> для порівняння та маніпулювання датами.</p>
+                
+                <p>5. <strong>Перевірка коректності структури рядка:</strong> Виконання завдання на перевірку правильності закриття дужок допомогло краще освоїти роботу з рядками та алгоритмами їх обробки в JavaScript.</p>
+                
         </div>
     </main>
 
